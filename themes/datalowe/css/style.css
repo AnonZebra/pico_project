@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+.site-header {
+    flex: 0 0 auto;
+    background-color: #e74c3c;
+    color: #2b2e30;
+    padding: 0 2em;
+}
+
+.site-header a, .site-header a:visited {
+    color: #2b2e30;
+}
+
+/* Main */
+
+.main {
+    flex: 1 0 auto;
+    padding: 2em;
+}
+
+/* Footer */
+
+.site-footer {
+    flex: 0 0 auto;
+    background: #e74c3c;
+    color: #2b2e30;
+    padding: 2em;
+}
+
+.site-footer a {
+    color: #f0f0f0;
+}
