@@ -4,6 +4,7 @@ Description: Kursmoment 1
 ---
 
 # Kursmoment 1
+Notera att jag för [github-taggar](https://github.com/AnonZebra/pico_project/releases) använder namngivningssystem enligt '0.1.0' för kmom01, '0.2.0' för kmom02, osv. Det känns naturligare för mig eftersom det inte riktigt är en färdig sida än och versionen vid kmom10 borde bättre motsvara den punkten.
 
 ## Har du jobbat med ramverk eller andra CMS:er tidigare?
 Jag har använt ramverket Django, ett Pythonpaket. Bland annat så har jag byggt ihop sidan [datalowe.com](https://datalowe.com) med Django via en VPS på Linode som servar sidan med Apache (jag följde en guide som höll min hand ganska mycket). Annars har jag mest knåpat på egen hörna med Django för att lära mig, utan att det kommit ut i världen.
