@@ -13,17 +13,84 @@ body {
     flex-direction: column;
 }
 
-/* Header */
-
-.site-header {
-    flex: 0 0 auto;
-    background-color: #e74c3c;
-    color: #2b2e30;
-    padding: 0 2em;
+h1 {
+    text-align: center;
+    margin-bottom: 0.5em;
 }
 
-.site-header a, .site-header a:visited {
+h1, h2, h3, h4, h5 {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #14bf98;
+}
+
+h2 {
+    margin-top: 1.3em;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+q {
+    font-style: italic;
+}
+
+a {
+    color: #6b6;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #4a4;
+}
+
+a:hover,
+a:active {
+    color: #14bf98;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+    margin: 0.3em 0;
+}
+
+/* Across-modules base classes */
+.center-content {
+    display: flex;
+    justify-content: center;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    flex: 0 0 auto;
+    background-color: #14bf98;
     color: #2b2e30;
+    padding: 0 2em;
+    align-items: center;
+    min-height: 100px;
+    justify-content: space-between;
+}
+
+.site-header a,
+.site-header a:visited {
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+}
+
+.site-header a:hover,
+.site-header a:active {
+    background: none;
+    text-decoration: none;
+    color: #efef34;
+}
+
+#nav a:hover, #nav-toggle:hover {
+    text-decoration: none;
 }
 
 /* Main */
@@ -36,12 +103,64 @@ body {
 /* Footer */
 
 .site-footer {
+    display: flex;
     flex: 0 0 auto;
-    background: #e74c3c;
-    color: #2b2e30;
-    padding: 2em;
+    background: #14bf98;
+    color: #fff;
+    padding: 2em 4em;
+    justify-content:space-between;
+    align-items: center;
 }
 
 .site-footer a {
-    color: #f0f0f0;
+    color: #fff;
+}
+
+/* Profile module */
+img.profile {
+    height: 300px;
+    width: 300px;
+    flex: 0 auto;
+    border-radius: 100%;
+    border-width: 10px;
+    border-style: double;
+    border-color: #14bf98;
+    margin: 5px 0 20px 0;
+}
+
+@media (max-width: 400px) {
+    img.profile {
+        height: 50vw;
+        width: 50vw;
+    }
+}
+
+/* Logo module */
+.logo {
+    align-self: stretch;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: stretch;
+}
+
+.logo img {
+    display: flex;
+    flex: initial;
+    height: 20%;
+    /* flex-basis: 1%; */
+    border-radius: 20%;
+}
+
+/* Social module */
+.social {
+    margin-left: 1em;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
 }

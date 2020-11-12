@@ -1,8 +1,8 @@
 ---
-Logo: assets/img/leaf_256x256.png
+Logo: assets/img/datalowe_logo.svg
 Tagline: My portfolio.
 Social:
-    - title: Link till sidans github repo.
-      url: https://github.com/dbwebb-se/design-v3
+    - title: Link to this page's github repo.
+      url: https://github.com/AnonZebra/pico_project
       icon: github
 ---
