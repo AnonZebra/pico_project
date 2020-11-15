@@ -1,0 +1,18 @@
+// Theme-specific variables
+
+// base
+$base-color: #14bf98; // dark mint-green-ish
+$background-color: #fff; // grey, element in the far background (body usually)
+$middleground-color: #fff; // white, element that holds content (eg article)
+$neutral-text-color: #333; // greyish black
+$neutral-link-color: #6b6; // darkish green
+$visited-link-color: #4a4; // darker green
+$p-font-size: 1.25em;
+$h1-font-size: 2.3 * $p-font-size;
+$line-height: 1.4;
+
+// layout/modules
+$header-link-color: #fff; // white
+$header-active-color: #efef34; // yellow
+$active-link-color: $base-color;
+$footer-text-color: #fff; // white

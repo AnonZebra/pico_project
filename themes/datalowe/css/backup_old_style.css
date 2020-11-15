@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -55,16 +55,10 @@ ul {
 
 ul li {
     margin: 0.3em 0;
-}
-
-/* Across-modules base classes */
-.center-content {
-    display: flex;
-    justify-content: center;
-}
+} */
 
 /* Header */
-.site-header {
+/* .site-header {
     display: flex;
     flex: 0 0 auto;
     background-color: #14bf98;
@@ -91,18 +85,18 @@ ul li {
 
 #nav a:hover, #nav-toggle:hover {
     text-decoration: none;
-}
+} */
 
 /* Main */
 
-.main {
+/* .main {
     flex: 1 0 auto;
     padding: 2em;
-}
+} */
 
 /* Footer */
 
-.site-footer {
+/* .site-footer {
     display: flex;
     flex: 0 0 auto;
     background: #14bf98;
@@ -114,10 +108,10 @@ ul li {
 
 .site-footer a {
     color: #fff;
-}
+} */
 
 /* Profile module */
-img.profile {
+/* img.profile {
     height: 300px;
     width: 300px;
     flex: 0 auto;
@@ -133,7 +127,7 @@ img.profile {
         height: 50vw;
         width: 50vw;
     }
-}
+} */
 
 /* Logo module */
 .logo {

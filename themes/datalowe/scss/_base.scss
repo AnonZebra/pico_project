@@ -1,4 +1,26 @@
-// Base CSS file for element defaults
+// Theme-specific Base CSS file for element defaults
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: $line-height;
+}
+
+body {
+    height: 100%;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: $h1-font-size;
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
 h1,
 h2,
 h3,
@@ -6,20 +28,53 @@ h4,
 h5,
 h6 {
     font-family: Montserrat, Helvetica, sans-serif;
-}
-
-h1,
-h2 {
-    font-weight: 700;
-}
-
-h3,
-h4,
-h5,
-h6 {
+    color: $base-color;
     font-weight: 400;
 }
 
-* {
-    font-family: 'Open Sans', sans-serif;
+h2 {
+    margin-top: 1.3em;
+}
+
+p {
+    font-size: $p-font-size;
+    margin-bottom: $line-height * $p-font-size;
+}
+
+q {
+    font-style: italic;
+}
+
+a {
+    color: $neutral-link-color;
+    text-decoration: none;
+}
+
+a:visited {
+    color: $visited-link-color;
+}
+
+a:hover,
+a:active {
+    color: $active-link-color;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 0.3em 0;
+}
+
+li {
+    font-size: $p-font-size;
+}
+
+main {
+    display: flex;
+    flex: 1 0 auto;
+    padding: 2em;
+    justify-content: center;
+    min-height: 80vh;
 }

@@ -1,0 +1,30 @@
+/* Profile module */
+main .profile {
+    text-align: center;
+    width: $p-font-size * 35;
+    background-color: $middleground-color;
+
+    img {
+        height: 300px;
+        width: 300px;
+        flex: 0 auto;
+        border-radius: 100%;
+        border-width: 10px;
+        border-style: double;
+        border-color: $base-color;
+        margin: 5px 0 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    main .profile {
+        width: 80vw;
+
+        img {
+            height: 50vw;
+            width: 50vw;
+        }
+    }
+
+
+}

@@ -1,5 +1,13 @@
-$base-color: #14bf98 !default; // dark mint-green-ish
+// theme-nonspecific base styling scss
+@import '../../shared/scss/base';
 
+// theme-specific variables;
+@import 'variables';
+
+// scss for loading custom fonts (in shared/fonts)
+@import 'theme-fonts';
+
+// Font Awesome
 // importerar grundmodulen för Font Awesome, den som mappar klassnamnen
 // vi använder mot vilken ikon som ska laddas in
 @import '../../shared/fontawesome/scss/fontawesome';
@@ -13,10 +21,23 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
 
-@import '../../shared/scss/base';
+// across modules placeholder classes
+@import 'placeholder_classes';
 
-// import scss for loading custom fonts (in shared/fonts)
-@import 'theme-fonts';
-
-// import base styling scss
+// theme-specific base styling
 @import 'base';
+
+// general purpose/across modules classes
+@import 'general-purpose';
+
+// layout (header, footer, article et c)
+@import 'layout';
+
+// default (no 'wrapclass' specified in page's markdown file) module
+@import 'default-module';
+
+// profile module
+@import 'profile';
+
+// social module
+@import 'social';

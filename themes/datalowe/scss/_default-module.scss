@@ -1,0 +1,12 @@
+/* Profile module */
+main .container {
+    text-align: center;
+    width: $p-font-size * 40;
+    background-color: $middleground-color;
+}
+
+@media (max-width: 400px) {
+    main .container {
+        width: 80vw;
+    }
+}
