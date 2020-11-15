@@ -1,0 +1,33 @@
+// Montserrat fonts
+@mixin montserrat($weight, $file_suffix) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: $weight;
+    font-display: block;
+    src: url('../../shared/fonts/Montserrat/Montserrat-' + $file_suffix + '.ttf') format('truetype');
+}
+
+@font-face {
+    @include montserrat(400, 'Regular');
+}
+
+@font-face {
+    @include montserrat(700, 'Bold');
+}
+
+// Open Sans fonts
+@mixin open-sans($weight, $file_suffix) {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: $weight;
+    font-display: block;
+    src: url('../../shared/fonts/Open_Sans/OpenSans-' + $file_suffix + '.ttf') format('truetype');
+}
+
+@font-face {
+    @include open-sans(400, 'Regular');
+}
+
+@font-face {
+    @include open-sans(700, 'Bold');
+}
