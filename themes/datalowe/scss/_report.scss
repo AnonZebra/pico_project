@@ -150,3 +150,14 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
         width: $hexagon-side-length * 1.4;
     }
 }
+
+@media only screen and (max-width: $hexagon-side-length * 2.414 * 1.4 + $hexagon-side-length * 1) {
+    .report-project > a > .hexagon {
+        height: $hexagon-side-length * 2.414 * 1.2;
+        width: $hexagon-side-length * 2.414 * 1.2;
+    }
+
+    .report-project > a > .report-box > .report-box-inner {
+        margin: $hexagon-side-length * 0.5 * 1.2 $hexagon-border-width * 4 * 2;
+    }
+}

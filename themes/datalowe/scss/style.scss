@@ -1,12 +1,3 @@
-// theme-nonspecific base styling scss
-@import '../../shared/scss/base';
-
-// theme-specific variables;
-@import 'variables';
-
-// scss for loading custom fonts (in shared/fonts)
-@import 'theme-fonts';
-
 // Font Awesome
 // importerar grundmodulen för Font Awesome, den som mappar klassnamnen
 // vi använder mot vilken ikon som ska laddas in
@@ -20,6 +11,15 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/brands';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
+
+// theme-nonspecific base styling scss
+@import '../../shared/scss/base';
+
+// theme-specific variables;
+@import 'variables';
+
+// scss for loading custom fonts (in shared/fonts)
+@import 'theme-fonts';
 
 // across modules placeholder classes
 @import 'placeholder_classes';

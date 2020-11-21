@@ -1,5 +1,5 @@
 ---
-Title: Projekt: Design
+Title: Slutprojekt
 Description: Kursmoment 10
 Intro: Slay the CSS beast
 Image: assets/img/dinosaur.svg
