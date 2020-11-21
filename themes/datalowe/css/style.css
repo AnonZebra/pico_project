@@ -6577,7 +6577,7 @@ main {
 .grid-root {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px auto 80px;
+  grid-template-rows: auto auto auto;
   grid-template-areas: "header header header" "main main main" "footer footer footer";
   grid-gap: 0.2rem;
 }
