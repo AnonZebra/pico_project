@@ -1,6 +1,7 @@
 ---
-Title: Kmom01
+Title: Kmom 1
 Description: Kursmoment 1
+Intro: Tagga till med Gittan
 ---
 
 # Kursmoment 1

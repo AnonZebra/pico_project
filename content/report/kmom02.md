@@ -1,6 +1,7 @@
 ---
-Title: Kmom02
+Title: Kmom 2
 Description: Kursmoment 2
+Intro: Don't give me no Sass, CSS
 ---
 
 # Kursmoment 2

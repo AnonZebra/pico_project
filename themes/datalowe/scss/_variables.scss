@@ -2,6 +2,7 @@
 
 // base
 $base-color: #14bf98; // dark mint-green-ish
+$alt-color: #efef34; // yellow
 $background-color: #fff; // grey, element in the far background (body usually)
 $middleground-color: #fff; // white, element that holds content (eg article)
 $neutral-text-color: #333; // greyish black
@@ -13,6 +14,6 @@ $line-height: 1.4;
 
 // layout/modules
 $header-link-color: #fff; // white
-$header-active-color: #efef34; // yellow
+$header-active-color: $alt-color; // yellow
 $active-link-color: $base-color;
 $footer-text-color: #fff; // white

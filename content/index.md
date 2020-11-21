@@ -1,7 +1,9 @@
 ---
 Title: Welcome
 Description: Welcome page introducing Lowe Wilsson.
+Author: Lowe Wilsson
 Wrapclass: profile
+Template: index
 ---
 ![Lowe Wilsson profile picture" class](%assets_url%/img/lowe_wilsson_profile.jpeg)
 

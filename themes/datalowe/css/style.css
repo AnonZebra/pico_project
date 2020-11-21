@@ -6573,6 +6573,15 @@ main {
   justify-content: center;
 }
 
+/* Grid root wrapper (basic) */
+.grid-root {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px auto 80px;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-gap: 0.2rem;
+}
+
 /* Header */
 .site-header {
   width: 100%;
@@ -6584,6 +6593,7 @@ main {
   align-items: center;
   min-height: 60px;
   justify-content: space-between;
+  grid-area: header;
 }
 
 .site-header a,
@@ -6669,6 +6679,37 @@ nav a:hover,
   display: none;
 }
 
+/* Main content */
+.grid-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 2fr 1.5fr;
+  grid-gap: 0.2rem;
+  grid-area: main;
+}
+
+/* Footer */
+.site-footer {
+  display: flex;
+  flex: 0 0 auto;
+  background: #14bf98;
+  color: #fff;
+  padding: 1em 3em;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: footer;
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+.site-footer q,
+.site-footer p {
+  font-size: 0.7rem;
+  margin-bottom: 0;
+}
+
 /* Small devices */
 @media (max-width: 767px) {
   nav {
@@ -6706,27 +6747,6 @@ nav a:hover,
     vertical-align: middle;
   }
 }
-/* Footer */
-.site-footer {
-  display: flex;
-  flex: 0 0 auto;
-  background: #14bf98;
-  color: #fff;
-  padding: 1em 3em;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.site-footer a {
-  color: #fff;
-}
-
-.site-footer q,
-.site-footer p {
-  font-size: 0.7rem;
-  margin-bottom: 0;
-}
-
 /* Profile module */
 main .container {
   text-align: center;
@@ -6775,4 +6795,152 @@ main .profile img {
 
 .icon-link {
   margin-left: 0.2em;
+}
+
+.grid-main-report {
+  align-items: center;
+}
+
+.report-box-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0.2rem;
+}
+
+.report-box-li {
+  display: grid;
+  justify-content: center;
+}
+
+.report-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.report-box > .report-box-inner {
+  margin: 50px 16px;
+  z-index: 1;
+}
+
+.report-box-inner > h2 {
+  color: #000;
+  margin: 0 0 0.2em;
+}
+
+.report-box:hover > .report-box-inner > h2,
+.report-box:active > .report-box-inner > h2,
+a:active > .report-box > .report-box-inner > h2 {
+  color: #efef34;
+}
+
+.report-box-inner > p {
+  color: #fff;
+  margin: 0;
+}
+
+.report-box-inner > img {
+  height: auto;
+  width: 100px;
+}
+
+/* hexagon based on https://stackoverflow.com/questions/19418486/hexagon-shape-with-a-border-outline
+and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
+.hexagon {
+  position: relative;
+  height: 241.4px;
+  width: 241.4px;
+  background: #14bf98;
+  color: #fff;
+}
+
+.hexagon::before,
+.double::after {
+  position: absolute;
+  content: "";
+}
+
+.hexagon::before {
+  top: 4px;
+  /* border width */
+  left: 4px;
+  /* border width */
+  height: calc(100% - 8px);
+  /* 100% - (2 * border width) */
+  width: calc(100% - 8px);
+  /* 100% - (2 * border width) */
+  background: #fff;
+}
+
+.hexagon,
+.hexagon::before,
+.double::after {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.double::after {
+  top: 8px;
+  left: 8px;
+  height: calc(100% - 16px);
+  width: calc(100% - 16px);
+  background: #14bf98;
+}
+
+.report-project {
+  display: grid;
+  justify-content: center;
+}
+
+.report-project > a > .report-box > .report-box-inner > h2 {
+  font-size: 2em;
+}
+
+.report-project > a > .hexagon {
+  height: 482.8px;
+  width: 482.8px;
+}
+
+.report-project > a > .report-box > .report-box-inner {
+  margin: 100px 32px;
+}
+
+.report-project > a > .report-box > .report-box-inner > img {
+  width: 200px;
+}
+
+@media only screen and (max-width: 770px) {
+  .report-box-list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .grid-main-report {
+    grid-template-rows: 0.3fr 3fr 1.5fr;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .report-box-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .grid-main-report {
+    grid-template-rows: 0.3fr 6fr 1.5fr;
+  }
+}
+@media only screen and (max-width: 582.8px) {
+  .report-project > a > .hexagon {
+    height: 337.96px;
+    width: 337.96px;
+  }
+
+  .report-project > a > .report-box > .report-box-inner {
+    margin: 70px 32px;
+  }
+
+  .report-project > a > .report-box > .report-box-inner > img {
+    width: 140px;
+  }
 }
