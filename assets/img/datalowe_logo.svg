@@ -1,6 +1,6 @@
 <svg width=" 80" height=" 80" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <rect width=" 80" height=" 80" style="fill:transparent;stroke:transparent;"/>
-    <path d="M 37.5 51.9375 Q 42.5 58.0625 47.5 51.9375" fill="transparent" stroke="#000" stroke-width=" 1"/>
+    <path d="M 37.5 51.9375 Q 42.5 58.0625 47.5 51.9375" fill="transparent" stroke="#000" stroke-width=" 2"/>
     <path d="M 20 80 V 0" stroke="#eee" fill="transparent" stroke-width= " 1"/>
     <path d="M 35 80 V 0" stroke="#eee" fill="transparent" stroke-width= " 1"/>
     <path d="M 50 80 V 0" stroke="#eee" fill="transparent" stroke-width= " 1"/>
@@ -11,6 +11,6 @@
     <path d="M 0 15 H 80" stroke="#eee" fill="transparent" stroke-width= " 1"/>
     <path d="M 0 75 H 80" stroke="black" fill="transparent" stroke-width= " 1"/>
     <path d="M 5 80 V 0" stroke="black" fill="transparent" stroke-width= " 1"/>
-    <circle cx=" 27.5" cy=" 27.4375" r=" 1" fill="#000" stroke-width= " 1"/>
-    <circle cx=" 57.5" cy=" 27.4375" r=" 1" fill="#000" stroke-width= " 1"/>
+    <circle cx=" 27.5" cy=" 27.4375" r=" 1.5" fill="#000" stroke-width= " 1"/>
+    <circle cx=" 57.5" cy=" 27.4375" r=" 1.5" fill="#000" stroke-width= " 1"/>
 </svg>
