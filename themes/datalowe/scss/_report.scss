@@ -36,15 +36,15 @@ $hexagon-border-width: 4px;
     margin: 0 0 0.2em;
 }
 
-.report-box:hover > .report-box-inner > h2,
-.report-box:active > .report-box-inner > h2,
-a:active > .report-box > .report-box-inner > h2 {
-    color: $alt-color;
+.report-box-inner > p {
+    color: $header-link-color;
+    margin: 0;
 }
 
-.report-box-inner > p {
-    color: #fff;
-    margin: 0;
+.report-box:hover > .report-box-inner > p,
+.report-box:active > .report-box-inner > p,
+a:active > .report-box > .report-box-inner > p {
+    color: $header-active-color;
 }
 
 .report-box-inner > img {

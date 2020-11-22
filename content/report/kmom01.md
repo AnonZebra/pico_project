@@ -2,6 +2,8 @@
 Title: Kmom 1
 Description: Kursmoment 1
 Intro: Tagga till med Gittan
+Template: kmom
+Wrapclass: kmom
 ---
 
 # Kursmoment 1

@@ -2,6 +2,8 @@
 Title: Kmom 2
 Description: Kursmoment 2
 Intro: Don't give me no Sass, CSS
+Wrapclass: kmom
+Template: kmom
 ---
 
 # Kursmoment 2
