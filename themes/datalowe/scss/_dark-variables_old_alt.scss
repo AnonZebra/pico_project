@@ -16,14 +16,14 @@ $alt-alt-color: scale-color($alt-alt-color, $lightness: $m-lightness-increase);
 $base-color: scale-color($base-color, $lightness: $m-lightness-decrease);
 // $alt-color: scale-color($alt-color, $lightness: $base-lightness-decrease);
 // $alt-alt-color: scale-color($alt-alt-color, $lightness: $base-lightness-decrease);
-$background-color: scale-color($background-color, $lightness: $xxl-lightness-decrease);
+$background-color: scale-color($background-color, $lightness: $xl-lightness-decrease);
 $middleground-color: scale-color($middleground-color, $lightness: $xl-lightness-decrease);
 
 // link text, inline text
 $neutral-text-color: #eee;
-$neutral-link-color: scale-color($neutral-link-color, $lightness: $s-lightness-increase);
-$visited-link-color: scale-color($visited-link-color, $lightness: $s-lightness-increase);
-$active-link-color: scale-color($neutral-link-color, $lightness: $m-lightness-increase);
+$neutral-link-color: scale-color($neutral-link-color, $lightness: $m-lightness-increase);
+$visited-link-color: scale-color($visited-link-color, $lightness: $m-lightness-increase);
+$active-link-color: scale-color($base-color, $lightness: $m-lightness-increase);
 $h-element-color: scale-color($h-element-color, $lightness: $l-lightness-increase);
 
 // layout/modules

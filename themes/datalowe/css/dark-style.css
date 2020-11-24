@@ -6493,7 +6493,7 @@ template {
 
 body {
   height: 100%;
-  background-color: #975600;
+  background-color: #656500;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6513,7 +6513,7 @@ h4,
 h5,
 h6 {
   font-family: Montserrat, Helvetica, sans-serif;
-  color: #78f1d5;
+  color: #60ecf4;
   font-weight: 400;
 }
 
@@ -6532,17 +6532,17 @@ q {
 }
 
 a {
-  color: #94cf94;
+  color: #33e3ed;
   text-decoration: none;
 }
 
 a:visited {
-  color: #77c977;
+  color: #0db4be;
 }
 
 a:hover,
 a:active {
-  color: #19e7b8;
+  color: #70ebf2;
 }
 
 ul {
@@ -6597,7 +6597,7 @@ main {
 
 .grid-main-kmom > .content-wrapper, main .container {
   border-radius: 10px;
-  border-color: #f0c808;
+  border-color: #EBCD1C;
   border-width: 2px;
   border-style: dashed;
 }
@@ -6616,7 +6616,7 @@ main {
   width: 100%;
   display: flex;
   flex: 0 0 auto;
-  background-color: #0e866a;
+  background-color: #08696f;
   color: #eee;
   padding: 0 2em;
   align-items: center;
@@ -6636,7 +6636,7 @@ main {
 .site-header a:active {
   background: none;
   text-decoration: none;
-  color: #f0c808;
+  color: #EBCD1C;
 }
 
 /* Logo in header */
@@ -6721,7 +6721,7 @@ nav a:hover,
 .site-footer {
   display: flex;
   flex: 0 0 auto;
-  background: #0e866a;
+  background: #08696f;
   color: #fff;
   padding: 1em 3em;
   justify-content: space-between;
@@ -6735,7 +6735,7 @@ nav a:hover,
 
 .site-footer a:hover,
 .site-footer a:active {
-  color: #f0c808;
+  color: #EBCD1C;
 }
 
 .site-footer q,
@@ -6807,7 +6807,7 @@ main .profile img {
   border-radius: 100%;
   border-width: 10px;
   border-style: double;
-  border-color: #0e866a;
+  border-color: #08696f;
   margin: 5px 0 20px;
 }
 
@@ -6861,7 +6861,7 @@ main .profile img {
 }
 
 .report-box-inner > h2 {
-  color: #0eb6f0;
+  color: #e62fa3;
   margin: 0 0 0.2em;
 }
 
@@ -6872,7 +6872,7 @@ main .profile img {
 
 a:hover > .report-box > .report-box-inner > p,
 a:active > .report-box > .report-box-inner > p {
-  color: #f0c808;
+  color: #EBCD1C;
 }
 
 .report-box-inner > img {
@@ -6886,8 +6886,8 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   position: relative;
   height: 241.4px;
   width: 241.4px;
-  background: #0e866a;
-  color: #975600;
+  background: #08696f;
+  color: #656500;
 }
 
 .hexagon::before,
@@ -6905,7 +6905,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   /* 100% - (2 * border width) */
   width: calc(100% - 8px);
   /* 100% - (2 * border width) */
-  background: #975600;
+  background: #656500;
 }
 
 .hexagon,
@@ -6919,12 +6919,12 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   left: 8px;
   height: calc(100% - 16px);
   width: calc(100% - 16px);
-  background: #0e866a;
+  background: #08696f;
 }
 
 a:active .hexagon::before,
 a:hover .hexagon::before {
-  background: #f0c808;
+  background: #EBCD1C;
 }
 
 .report-project {
@@ -7025,7 +7025,7 @@ a:hover .hexagon::before {
   grid-template-rows: auto;
   grid-area: aside;
   border-radius: 10px;
-  background-image: linear-gradient(#109677, #0d7f65);
+  background-image: linear-gradient(#097a81, #076469);
   border-width: 5px;
   border-style: none solid solid;
   border-image: linear-gradient(to top, #555, rgba(0, 0, 0, 0)) 1 20%;
@@ -7057,7 +7057,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   position: relative;
   height: 144.84px;
   width: 144.84px;
-  background: #0e866a;
+  background: #08696f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7084,7 +7084,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
 
 a:active .small-hexagon::before,
 a:hover .small-hexagon::before {
-  background: #f0c808;
+  background: #EBCD1C;
 }
 
 .small-hexagon,
@@ -7098,7 +7098,7 @@ a:hover .small-hexagon::before {
   left: 8px;
   height: calc(100% - 16px);
   width: calc(100% - 16px);
-  background: #0e866a;
+  background: #08696f;
 }
 
 @media only screen and (max-width: 900px) {
@@ -7106,7 +7106,7 @@ a:hover .small-hexagon::before {
     position: relative;
     height: 126px;
     width: 126px;
-    background: #0e866a;
+    background: #08696f;
     color: #fff;
   }
 
@@ -7128,6 +7128,6 @@ a:hover .small-hexagon::before {
     margin-right: 0;
     border: 0;
     box-shadow: none;
-    background-image: linear-gradient(#4d4d4d, #955500);
+    background-image: linear-gradient(#4d4d4d, #646400);
   }
 }

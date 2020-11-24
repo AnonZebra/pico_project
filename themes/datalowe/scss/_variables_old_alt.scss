@@ -6,18 +6,17 @@
 // whites FFF1D0
 
 // base
-$base-color: #0B969E; // dark mint-green-ish
-$alt-color: #EBCD1C; // damp yellow
-$alt-alt-color: #9E136B; // light purple/pinkish
-// $alt-alt-color: #EB0596; // light purple/pinkish
-$background-color: #fffffc; // slightly yellow, element in the far background (body usually)
+$base-color: #14bf98; // dark mint-green-ish
+$alt-color: #f0c808; // orangeish yellow
+$alt-alt-color: #086788; // blue sapphire
+$background-color: #fffcf8; // grey, element in the far background (body usually)
 $middleground-color: #fff; // white, element that holds content (eg article)
 
 // link text, inline text
 $neutral-text-color: #333; // greyish black
-$neutral-link-color: #1CE0EB; // light mint
-$visited-link-color: #0B969E; // dark mint-green-ish
-$active-link-color: scale-color($neutral-link-color, $lightness: 10%);
+$neutral-link-color: #6b6; // darkish green
+$visited-link-color: #4a4; // darker green
+$active-link-color: $base-color;
 $h-element-color: $base-color;
 
 // text blocks
