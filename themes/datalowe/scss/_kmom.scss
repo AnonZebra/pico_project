@@ -142,6 +142,6 @@ a:hover .small-hexagon::before {
         border: none;
         box-shadow: none;
         background-image: linear-gradient($middleground-color,
-        scale-color($background-color, $lightness: -1%));
+    scale-color($background-color, $lightness: -1%));
     }
 }
