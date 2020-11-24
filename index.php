@@ -50,22 +50,20 @@ if (isset($_GET["action"])) {
     $url = preg_replace("/index.php\//", "", $url);
     header("Location: $url");
     }
-}
 
-// ADDED
-// destroy session
-if ($_GET["action"] == "session_destroy") {
+    if ($_GET["action"] == "session_destroy") {
 
-    //remove PHPSESSID from browser
-    if ( isset( $_COOKIE[session_name()] ) )
-    setcookie( session_name(), "", time()-3600, "/" );
-    //clear session from globals
-    $_SESSION = array();
-    //clear session from disk
-    session_destroy();
-    $url = "http://" . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"];
-    $url = preg_replace("/index.php\//", "", $url);
-    header("Location: $url");
+        // //remove PHPSESSID from browser
+        // if ( isset( $_COOKIE[session_name()] ) )
+        // setcookie( session_name(), "", time()-3600, "/" );
+        // //clear session from globals
+        // $_SESSION = array();
+        //clear session from disk
+        session_destroy();
+        $url = "http://" . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"];
+        $url = preg_replace("/index.php\//", "", $url);
+        header("Location: $url");
+    }
 }
 
 

@@ -7126,7 +7126,7 @@ a:hover .small-hexagon::before {
 
   .grid-main-kmom > .content-wrapper {
     margin-right: 0;
-    border: none;
+    border: 0;
     box-shadow: none;
     background-image: linear-gradient(#4d4d4d, #955500);
   }

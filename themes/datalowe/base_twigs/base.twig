@@ -22,9 +22,9 @@
 
     <link rel="stylesheet" href="{{ theme_url }}/css/normalize.min.css" type="text/css" />
     {% if config.session.theme == "dark" %}
-    <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
-    {% else %}
     <link rel="stylesheet" href="{{ theme_url }}/css/dark-style.css" type="text/css" />
+    {% else %}
+    <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
     {% endif %}
 {% endblock %}
 </head>

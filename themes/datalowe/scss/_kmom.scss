@@ -139,7 +139,7 @@ a:hover .small-hexagon::before {
 
     .grid-main-kmom > .content-wrapper {
         margin-right: 0;
-        border: none;
+        border: 0;
         box-shadow: none;
         background-image: linear-gradient($middleground-color,
     scale-color($background-color, $lightness: -1%));
