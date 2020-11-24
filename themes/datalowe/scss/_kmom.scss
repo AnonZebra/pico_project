@@ -10,7 +10,7 @@ $small-hexagon-border-width: 2px;
     'header header header'
     'aside main main'
     'footer footer footer';
-    grid-gap: 0.2rem;
+    grid-gap: 2rem;
 }
 
 // kmom main element
@@ -18,6 +18,14 @@ $small-hexagon-border-width: 2px;
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    padding: 0;
+}
+
+.grid-main-kmom > .content-wrapper {
+    @extend %content-border;
+    background-color: $middleground-color;
+    padding: 2em;
+    margin-right: 2rem;
 }
 
 // sidebar, filling up one column of 'main row'
@@ -26,12 +34,14 @@ $small-hexagon-border-width: 2px;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-area: aside;
-    margin: 2em;
-    border-radius: 10px;
-    background-color: scale-color($base-color, $lightness: -5%);
+    border-radius: $m-border-radius;
+    background-image: linear-gradient(scale-color($base-color, $lightness: 10%),
+scale-color($base-color, $lightness: -10%));
+    // background-color: scale-color($base-color, $lightness: 20%);
     border-width: 5px;
-    border-style: solid;
+    border-style: none solid solid;
     border-image: linear-gradient(to top, #555, rgba(0, 0, 0, 0)) 1 20%;
+    margin-left: 2rem;
 }
 
 .sidebar > .report-box-list {
@@ -124,5 +134,14 @@ a:hover .small-hexagon::before {
         'header header header'
         'main main main'
         'footer footer footer';
+        grid-gap: 0;
+    }
+
+    .grid-main-kmom > .content-wrapper {
+        margin-right: 0;
+        border: none;
+        box-shadow: none;
+        background-image: linear-gradient($middleground-color,
+        scale-color($background-color, $lightness: -1%));
     }
 }

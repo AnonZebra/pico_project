@@ -6,5 +6,5 @@ Wrapclass: report
 Author: Lowe Wilsson
 ---
 
-Redovisningssida för design
+Kursrapporter
 ==================

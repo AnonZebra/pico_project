@@ -6493,7 +6493,7 @@ template {
 
 body {
   height: 100%;
-  background-color: #fff;
+  background-color: #fffcf8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6578,6 +6578,28 @@ main {
   justify-content: center;
 }
 
+/* Across-modules placeholder classes */
+.grid-main-kmom > .content-wrapper, main .container {
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.report-box-li > a:hover,
+.report-box-li > a:active {
+  filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.4));
+}
+
+.report-project > a:hover,
+.report-project > a:active {
+  filter: drop-shadow(8px 8px 2px rgba(0, 0, 0, 0.4));
+}
+
+.grid-main-kmom > .content-wrapper, main .container {
+  border-radius: 10px;
+  border-color: #f0c808;
+  border-width: 2px;
+  border-style: dashed;
+}
+
 /* Grid root wrapper (basic) */
 .grid-root {
   display: grid;
@@ -6603,7 +6625,7 @@ main {
 
 .site-header a,
 .site-header a:visited {
-  color: #fff;
+  color: #fffaf3;
   font-family: Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
@@ -6612,7 +6634,7 @@ main {
 .site-header a:active {
   background: none;
   text-decoration: none;
-  color: #efef34;
+  color: #f0c808;
 }
 
 /* Logo in header */
@@ -6706,7 +6728,12 @@ nav a:hover,
 }
 
 .site-footer a {
-  color: #fff;
+  color: #fffaf3;
+}
+
+.site-footer a:hover,
+.site-footer a:active {
+  color: #f0c808;
 }
 
 .site-footer q,
@@ -6757,6 +6784,7 @@ main .container {
   text-align: center;
   width: 50em;
   background-color: #fff;
+  padding: 1rem 2rem;
 }
 
 @media (max-width: 400px) {
@@ -6803,7 +6831,7 @@ main .profile img {
 }
 
 .grid-main-report {
-  align-items: center;
+  grid-template-rows: 0.3fr 2fr 1.5fr;
 }
 
 .report-box-list {
@@ -6831,19 +6859,18 @@ main .profile img {
 }
 
 .report-box-inner > h2 {
-  color: #000;
+  color: #086788;
   margin: 0 0 0.2em;
 }
 
 .report-box-inner > p {
-  color: #fff;
+  color: #fffaf3;
   margin: 0;
 }
 
-.report-box:hover > .report-box-inner > p,
-.report-box:active > .report-box-inner > p,
+a:hover > .report-box > .report-box-inner > p,
 a:active > .report-box > .report-box-inner > p {
-  color: #efef34;
+  color: #f0c808;
 }
 
 .report-box-inner > img {
@@ -6858,7 +6885,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   height: 241.4px;
   width: 241.4px;
   background: #14bf98;
-  color: #fff;
+  color: #fffcf8;
 }
 
 .hexagon::before,
@@ -6876,7 +6903,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   /* 100% - (2 * border width) */
   width: calc(100% - 8px);
   /* 100% - (2 * border width) */
-  background: #fff;
+  background: #fffcf8;
 }
 
 .hexagon,
@@ -6891,6 +6918,11 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   height: calc(100% - 16px);
   width: calc(100% - 16px);
   background: #14bf98;
+}
+
+a:active .hexagon::before,
+a:hover .hexagon::before {
+  background: #f0c808;
 }
 
 .report-project {
@@ -6958,19 +6990,31 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   .report-project > a > .report-box > .report-box-inner {
     margin: 60px 32px;
   }
+
+  .report-project > a:hover,
+.report-project > a:active {
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.4));
+  }
 }
 .kmom-root {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas: "header header header" "aside main main" "footer footer footer";
-  grid-gap: 0.2rem;
+  grid-gap: 2rem;
 }
 
 .grid-main-kmom {
   align-items: center;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  padding: 0;
+}
+
+.grid-main-kmom > .content-wrapper {
+  background-color: #fff;
+  padding: 2em;
+  margin-right: 2rem;
 }
 
 .sidebar {
@@ -6978,12 +7022,12 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-area: aside;
-  margin: 2em;
   border-radius: 10px;
-  background-color: #13b590;
+  background-image: linear-gradient(#17daae, #12ac89);
   border-width: 5px;
-  border-style: solid;
+  border-style: none solid solid;
   border-image: linear-gradient(to top, #555, rgba(0, 0, 0, 0)) 1 20%;
+  margin-left: 2rem;
 }
 
 .sidebar > .report-box-list {
@@ -7038,7 +7082,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
 
 a:active .small-hexagon::before,
 a:hover .small-hexagon::before {
-  background: #efef34;
+  background: #f0c808;
 }
 
 .small-hexagon,
@@ -7075,5 +7119,13 @@ a:hover .small-hexagon::before {
 
   .kmom-root {
     grid-template-areas: "header header header" "main main main" "footer footer footer";
+    grid-gap: 0;
+  }
+
+  .grid-main-kmom > .content-wrapper {
+    margin-right: 0;
+    border: none;
+    box-shadow: none;
+    background-image: linear-gradient(#fff, #fffaf3);
   }
 }

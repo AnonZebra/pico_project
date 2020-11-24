@@ -1,8 +1,10 @@
 /* Profile module */
 main .container {
+    @extend %content-border;
     text-align: center;
     width: $p-font-size * 40;
     background-color: $middleground-color;
+    padding: 1rem 2rem;
 }
 
 @media (max-width: 400px) {

@@ -135,6 +135,11 @@ nav a:hover,
     color: $header-link-color;
 }
 
+.site-footer a:hover,
+.site-footer a:active {
+    color: $header-active-color;
+}
+
 .site-footer q,
 .site-footer p {
     font-size: 0.7rem;
