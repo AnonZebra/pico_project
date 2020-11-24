@@ -6,17 +6,17 @@
 // whites FFF1D0
 
 // base
-$base-color: #0B969E; // dark mint-green-ish
-$alt-color: #EBCD1C; // damp yellow
-$alt-alt-color: #9E136B; // light purple/pinkish
+$base-color: #0b969e; // dark mint-green-ish
+$alt-color: #ebcd1c; // damp yellow
+$alt-alt-color: #9e136b; // light purple/pinkish
 // $alt-alt-color: #EB0596; // light purple/pinkish
-$background-color: #fffffc; // slightly yellow, element in the far background (body usually)
+$background-color: #fdfdfd; // slightly yellow, element in the far background (body usually)
 $middleground-color: #fff; // white, element that holds content (eg article)
 
 // link text, inline text
 $neutral-text-color: #333; // greyish black
-$neutral-link-color: #1CE0EB; // light mint
-$visited-link-color: #0B969E; // dark mint-green-ish
+$neutral-link-color: #1ce0eb; // light mint
+$visited-link-color: #0b969e; // dark mint-green-ish
 $active-link-color: scale-color($neutral-link-color, $lightness: 10%);
 $h-element-color: $base-color;
 
@@ -28,13 +28,20 @@ $line-height: 1.4;
 // borders
 $m-border-radius: 10px;
 
-// layout/modules
-$header-link-color: #fffaf3; // white
-$header-active-color: $alt-color; // yellow
-$footer-text-color: #fff; // white
-
 // gradients
 // top value, to increase base color by
 $gradient-top: 10%;
 // bottom value, to decrease base color by
 $gradient-bottom: -10%;
+
+// layout
+$header-link-color: #fffaf3; // white
+$header-active-color: $alt-color; // yellow
+$footer-text-color: #fff; // white
+
+// modules
+$hexagon-bright-color: #fff;
+$hexagon-dark-color: #000;
+// how much to change lightness of alt-alt-color by for kmom
+// narrow screen gradient
+$kmom-alt-gradient-shift: 90%;

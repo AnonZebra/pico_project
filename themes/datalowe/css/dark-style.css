@@ -6493,7 +6493,7 @@ template {
 
 body {
   height: 100%;
-  background-color: #656500;
+  background-color: #333333;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6597,7 +6597,7 @@ main {
 
 .grid-main-kmom > .content-wrapper, main .container {
   border-radius: 10px;
-  border-color: #EBCD1C;
+  border-color: #ebcd1c;
   border-width: 2px;
   border-style: dashed;
 }
@@ -6636,7 +6636,7 @@ main {
 .site-header a:active {
   background: none;
   text-decoration: none;
-  color: #EBCD1C;
+  color: #ebcd1c;
 }
 
 /* Logo in header */
@@ -6735,7 +6735,7 @@ nav a:hover,
 
 .site-footer a:hover,
 .site-footer a:active {
-  color: #EBCD1C;
+  color: #ebcd1c;
 }
 
 .site-footer q,
@@ -6861,18 +6861,18 @@ main .profile img {
 }
 
 .report-box-inner > h2 {
-  color: #e62fa3;
+  color: #d91a93;
   margin: 0 0 0.2em;
 }
 
 .report-box-inner > p {
-  color: #fffaf3;
+  color: #cccccc;
   margin: 0;
 }
 
 a:hover > .report-box > .report-box-inner > p,
 a:active > .report-box > .report-box-inner > p {
-  color: #EBCD1C;
+  color: #ebcd1c;
 }
 
 .report-box-inner > img {
@@ -6887,7 +6887,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   height: 241.4px;
   width: 241.4px;
   background: #08696f;
-  color: #656500;
+  color: #cccccc;
 }
 
 .hexagon::before,
@@ -6905,7 +6905,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   /* 100% - (2 * border width) */
   width: calc(100% - 8px);
   /* 100% - (2 * border width) */
-  background: #656500;
+  background: #cccccc;
 }
 
 .hexagon,
@@ -6924,7 +6924,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
 
 a:active .hexagon::before,
 a:hover .hexagon::before {
-  background: #EBCD1C;
+  background: #ebcd1c;
 }
 
 .report-project {
@@ -7049,6 +7049,7 @@ a:hover .hexagon::before {
 
 .sidebar .report-box-inner > p {
   font-size: 1.5rem;
+  color: #cccccc;
 }
 
 /* hexagon based on https://stackoverflow.com/questions/19418486/hexagon-shape-with-a-border-outline
@@ -7061,7 +7062,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #cccccc;
 }
 
 .small-hexagon::before,
@@ -7079,12 +7080,12 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   /* 100% - (2 * border width) */
   width: calc(100% - 4px);
   /* 100% - (2 * border width) */
-  background: #fff;
+  background: #cccccc;
 }
 
 a:active .small-hexagon::before,
 a:hover .small-hexagon::before {
-  background: #EBCD1C;
+  background: #ebcd1c;
 }
 
 .small-hexagon,
@@ -7107,7 +7108,7 @@ a:hover .small-hexagon::before {
     height: 126px;
     width: 126px;
     background: #08696f;
-    color: #fff;
+    color: #cccccc;
   }
 
   .sidebar .report-box-inner > p {
@@ -7128,6 +7129,6 @@ a:hover .small-hexagon::before {
     margin-right: 0;
     border: 0;
     box-shadow: none;
-    background-image: linear-gradient(#4d4d4d, #646400);
+    background-image: linear-gradient(#4d4d4d, #441e36);
   }
 }

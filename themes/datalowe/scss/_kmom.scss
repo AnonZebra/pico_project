@@ -61,6 +61,7 @@ scale-color($base-color, $lightness: $gradient-bottom));
 
 .sidebar .report-box-inner > p {
     font-size: 1.5rem;
+    color: $hexagon-bright-color;
 }
 
 /* hexagon based on https://stackoverflow.com/questions/19418486/hexagon-shape-with-a-border-outline
@@ -73,7 +74,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: $hexagon-bright-color;
 }
 
 .small-hexagon::before,
@@ -87,7 +88,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
     left: $small-hexagon-border-width;  /* border width */
     height: calc(100% - #{$small-hexagon-border-width * 2});  /* 100% - (2 * border width) */
     width: calc(100% - #{$small-hexagon-border-width * 2});  /* 100% - (2 * border width) */
-    background: #fff;
+    background: $hexagon-bright-color;
 }
 
 a:active .small-hexagon::before,
@@ -116,7 +117,7 @@ a:hover .small-hexagon::before {
         height: $small-hexagon-side-length * 2.1;
         width: $small-hexagon-side-length * 2.1;
         background: $base-color;
-        color: #fff;
+        color: $hexagon-bright-color;
     }
 
     .sidebar .report-box-inner > p {
@@ -142,6 +143,7 @@ a:hover .small-hexagon::before {
         border: 0;
         box-shadow: none;
         background-image: linear-gradient($middleground-color,
-    scale-color($background-color, $lightness: -1%));
+    scale-color($alt-alt-color, $lightness: $kmom-alt-gradient-shift,
+    $saturation: -50%));
     }
 }

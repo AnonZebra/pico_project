@@ -12,7 +12,7 @@ $l-lightness-increase: 50%;
 // base
 // increasing lightness of second alt color, since it's used for making
 // smaller components pop out
-$alt-alt-color: scale-color($alt-alt-color, $lightness: $m-lightness-increase);
+$alt-alt-color: scale-color($alt-alt-color, $lightness: 20%);
 $base-color: scale-color($base-color, $lightness: $m-lightness-decrease);
 // $alt-color: scale-color($alt-color, $lightness: $base-lightness-decrease);
 // $alt-alt-color: scale-color($alt-alt-color, $lightness: $base-lightness-decrease);
@@ -26,13 +26,20 @@ $visited-link-color: scale-color($visited-link-color, $lightness: $s-lightness-i
 $active-link-color: scale-color($neutral-link-color, $lightness: $m-lightness-increase);
 $h-element-color: scale-color($h-element-color, $lightness: $l-lightness-increase);
 
-// layout/modules
-$header-link-color: #fffaf3;
-$header-active-color: $alt-color;
-$footer-text-color: #fff;
-
 // gradients
 // top value, to increase base color by
 $gradient-top: 5%;
 // bottom value, to decrease base color by
 $gradient-bottom: -5%;
+
+// layout
+$header-link-color: #fffaf3;
+$header-active-color: $alt-color;
+$footer-text-color: #fff;
+
+// modules
+$hexagon-bright-color: scale-color($hexagon-bright-color, $lightness: -20%);
+$hexagon-dark-color: scale-color($hexagon-dark-color, $lightness: -20%);
+// how much to change lightness of alt-alt-color by for kmom
+// narrow screen gradient
+$kmom-alt-gradient-shift: -60%;

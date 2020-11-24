@@ -28,7 +28,9 @@
                         <div class="report-box-inner">
                             <h2 class="report-box-title">{{ attribute(pages, "report/kmom10").title }}</h2>
                             <p class="report-box-intro">{{ attribute(pages, "report/kmom10").meta.intro }}</p>
-                            <img src="{{ base_url }}/{{ pages["report/kmom10"].meta.image|url }}" alt="{{ pages["report/kmom10"].meta.imagedesc }}" />
+                            <img src="{{ base_url }}/{% if config.session.theme == "dark" %}{{ pages["report/kmom10"].meta.imagedark|url }}
+                            {% else %}{{ pages["report/kmom10"].meta.image|url }}{% endif %}"
+                            alt="{{ pages["report/kmom10"].meta.imagedesc }}" />
                         </div>
                     </div>
                 </a>

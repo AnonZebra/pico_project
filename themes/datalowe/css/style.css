@@ -6493,7 +6493,7 @@ template {
 
 body {
   height: 100%;
-  background-color: #fffffc;
+  background-color: #fdfdfd;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6513,7 +6513,7 @@ h4,
 h5,
 h6 {
   font-family: Montserrat, Helvetica, sans-serif;
-  color: #0B969E;
+  color: #0b969e;
   font-weight: 400;
 }
 
@@ -6532,12 +6532,12 @@ q {
 }
 
 a {
-  color: #1CE0EB;
+  color: #1ce0eb;
   text-decoration: none;
 }
 
 a:visited {
-  color: #0B969E;
+  color: #0b969e;
 }
 
 a:hover,
@@ -6597,7 +6597,7 @@ main {
 
 .grid-main-kmom > .content-wrapper, main .container {
   border-radius: 10px;
-  border-color: #EBCD1C;
+  border-color: #ebcd1c;
   border-width: 2px;
   border-style: dashed;
 }
@@ -6616,7 +6616,7 @@ main {
   width: 100%;
   display: flex;
   flex: 0 0 auto;
-  background-color: #0B969E;
+  background-color: #0b969e;
   color: #333;
   padding: 0 2em;
   align-items: center;
@@ -6636,7 +6636,7 @@ main {
 .site-header a:active {
   background: none;
   text-decoration: none;
-  color: #EBCD1C;
+  color: #ebcd1c;
 }
 
 /* Logo in header */
@@ -6721,7 +6721,7 @@ nav a:hover,
 .site-footer {
   display: flex;
   flex: 0 0 auto;
-  background: #0B969E;
+  background: #0b969e;
   color: #fff;
   padding: 1em 3em;
   justify-content: space-between;
@@ -6735,7 +6735,7 @@ nav a:hover,
 
 .site-footer a:hover,
 .site-footer a:active {
-  color: #EBCD1C;
+  color: #ebcd1c;
 }
 
 .site-footer q,
@@ -6807,7 +6807,7 @@ main .profile img {
   border-radius: 100%;
   border-width: 10px;
   border-style: double;
-  border-color: #0B969E;
+  border-color: #0b969e;
   margin: 5px 0 20px;
 }
 
@@ -6861,18 +6861,18 @@ main .profile img {
 }
 
 .report-box-inner > h2 {
-  color: #9E136B;
+  color: #9e136b;
   margin: 0 0 0.2em;
 }
 
 .report-box-inner > p {
-  color: #fffaf3;
+  color: #fff;
   margin: 0;
 }
 
 a:hover > .report-box > .report-box-inner > p,
 a:active > .report-box > .report-box-inner > p {
-  color: #EBCD1C;
+  color: #ebcd1c;
 }
 
 .report-box-inner > img {
@@ -6886,8 +6886,8 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   position: relative;
   height: 241.4px;
   width: 241.4px;
-  background: #0B969E;
-  color: #fffffc;
+  background: #0b969e;
+  color: #fff;
 }
 
 .hexagon::before,
@@ -6905,7 +6905,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   /* 100% - (2 * border width) */
   width: calc(100% - 8px);
   /* 100% - (2 * border width) */
-  background: #fffffc;
+  background: #fff;
 }
 
 .hexagon,
@@ -6919,12 +6919,12 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   left: 8px;
   height: calc(100% - 16px);
   width: calc(100% - 16px);
-  background: #0B969E;
+  background: #0b969e;
 }
 
 a:active .hexagon::before,
 a:hover .hexagon::before {
-  background: #EBCD1C;
+  background: #ebcd1c;
 }
 
 .report-project {
@@ -7049,6 +7049,7 @@ a:hover .hexagon::before {
 
 .sidebar .report-box-inner > p {
   font-size: 1.5rem;
+  color: #fff;
 }
 
 /* hexagon based on https://stackoverflow.com/questions/19418486/hexagon-shape-with-a-border-outline
@@ -7057,7 +7058,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
   position: relative;
   height: 144.84px;
   width: 144.84px;
-  background: #0B969E;
+  background: #0b969e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7084,7 +7085,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
 
 a:active .small-hexagon::before,
 a:hover .small-hexagon::before {
-  background: #EBCD1C;
+  background: #ebcd1c;
 }
 
 .small-hexagon,
@@ -7098,7 +7099,7 @@ a:hover .small-hexagon::before {
   left: 8px;
   height: calc(100% - 16px);
   width: calc(100% - 16px);
-  background: #0B969E;
+  background: #0b969e;
 }
 
 @media only screen and (max-width: 900px) {
@@ -7106,7 +7107,7 @@ a:hover .small-hexagon::before {
     position: relative;
     height: 126px;
     width: 126px;
-    background: #0B969E;
+    background: #0b969e;
     color: #fff;
   }
 
@@ -7128,6 +7129,6 @@ a:hover .small-hexagon::before {
     margin-right: 0;
     border: 0;
     box-shadow: none;
-    background-image: linear-gradient(#fff, #fffff7);
+    background-image: linear-gradient(#fff, #f5e8f0);
   }
 }
