@@ -11,5 +11,10 @@ Social:
     - title: Link to Lowe Wilsson's Linkedin account.
       url: https://se.linkedin.com/in/lowe-wilsson-818943101
       icon: fab fa-linkedin
-
+    - title: Dark Mode
+      url: ?action=theme
+      icon: fas fa-moon
+    - title: Destroy Session
+      url: ?action=session_destroy
+      icon: fas fa-trash-alt
 ---

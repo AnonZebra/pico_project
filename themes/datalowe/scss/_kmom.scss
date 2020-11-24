@@ -35,8 +35,8 @@ $small-hexagon-border-width: 2px;
     grid-template-rows: auto;
     grid-area: aside;
     border-radius: $m-border-radius;
-    background-image: linear-gradient(scale-color($base-color, $lightness: 10%),
-scale-color($base-color, $lightness: -10%));
+    background-image: linear-gradient(scale-color($base-color, $lightness: $gradient-top),
+scale-color($base-color, $lightness: $gradient-bottom));
     // background-color: scale-color($base-color, $lightness: 20%);
     border-width: 5px;
     border-style: none solid solid;

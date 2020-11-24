@@ -29,14 +29,13 @@ $pico = new Pico(
 );
 
 // override configuration?
+// EDITED, make session info available in twig files by using 'config.session'
 $pico->setConfig(array(
     'session' => $_SESSION
 ));
 
-// run application
-echo $pico->run();
-
-
+// ADDED
+// change between light/dark theme
 if (isset($_GET["action"])) {
     if ($_GET["action"] == "theme") {
     $previousValue = isset($_SESSION["theme"]) ? $_SESSION["theme"] : null;
@@ -53,9 +52,22 @@ if (isset($_GET["action"])) {
     }
 }
 
+// ADDED
+// destroy session
 if ($_GET["action"] == "session_destroy") {
+
+    //remove PHPSESSID from browser
+    if ( isset( $_COOKIE[session_name()] ) )
+    setcookie( session_name(), "", time()-3600, "/" );
+    //clear session from globals
+    $_SESSION = array();
+    //clear session from disk
     session_destroy();
     $url = "http://" . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"];
     $url = preg_replace("/index.php\//", "", $url);
     header("Location: $url");
 }
+
+
+// run application
+echo $pico->run();

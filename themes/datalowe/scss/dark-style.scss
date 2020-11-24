@@ -1,0 +1,50 @@
+// Font Awesome
+// importerar grundmodulen för Font Awesome, den som mappar klassnamnen
+// vi använder mot vilken ikon som ska laddas in
+@import '../../shared/fontawesome/scss/fontawesome';
+// uppdaterar vi vart vi lagt våra fonter. Ursprungligen utgår det ifrån den
+// .scss fil man “kompilerar”, i mitt fall aurora/scss/style.scss. Så jag
+// behöver stega i filträdet tills jag hittar till shared/webfonts.
+$fa-font-path: '../../shared/fontawesome/webfonts';
+// Till sist laddar vi in tre typer av ikoner (fonter):
+// Brands, Solid och Regular.
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+// theme-nonspecific base styling scss
+@import '../../shared/scss/base';
+
+// theme-specific variables
+@import 'variables';
+
+// DARK theme application happens here,
+// by replacing default variable values
+@import 'dark-variables';
+
+// scss for loading custom fonts (in shared/fonts)
+@import 'theme-fonts';
+
+// theme-specific base styling
+@import 'base';
+
+// general purpose/across modules classes
+@import 'general-purpose';
+
+// layout (header, footer, article et c)
+@import 'layout';
+
+// default (no 'wrapclass' specified in page's markdown file) module
+@import 'default-module';
+
+// profile module
+@import 'profile';
+
+// social module
+@import 'social';
+
+// report module
+@import 'report';
+
+// kmom module
+@import 'kmom';

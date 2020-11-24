@@ -12,13 +12,14 @@ $alt-alt-color: #086788; // blue sapphire
 $background-color: #fffcf8; // grey, element in the far background (body usually)
 $middleground-color: #fff; // white, element that holds content (eg article)
 
-// links
+// link text, inline text
 $neutral-text-color: #333; // greyish black
 $neutral-link-color: #6b6; // darkish green
 $visited-link-color: #4a4; // darker green
 $active-link-color: $base-color;
+$h-element-color: $base-color;
 
-// text (blocks)
+// text blocks
 $p-font-size: 1.25em;
 $h1-font-size: 2.3 * $p-font-size;
 $line-height: 1.4;
@@ -30,3 +31,9 @@ $m-border-radius: 10px;
 $header-link-color: #fffaf3; // white
 $header-active-color: $alt-color; // yellow
 $footer-text-color: #fff; // white
+
+// gradients
+// top value, to increase base color by
+$gradient-top: 10%;
+// bottom value, to decrease base color by
+$gradient-bottom: -10%;

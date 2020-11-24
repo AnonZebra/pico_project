@@ -28,7 +28,7 @@ h4,
 h5,
 h6 {
     font-family: Montserrat, Helvetica, sans-serif;
-    color: $base-color;
+    color: $h-element-color;
     font-weight: 400;
 }
 
@@ -37,6 +37,7 @@ h2 {
 }
 
 p {
+    color: $neutral-text-color;
     font-size: $p-font-size;
     margin-bottom: $line-height * $p-font-size;
 }
@@ -69,6 +70,7 @@ ul li {
 
 li {
     font-size: $p-font-size;
+    color: $neutral-text-color;
 }
 
 main {
