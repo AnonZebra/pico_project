@@ -4,7 +4,7 @@ Description: Analysis 3
 Intro: Principles of design
 Template: kmom
 Wrapclass: kmom
-Wrapclass_secondary: analysis
+Wrapclass_secondary: analysis-detail
 Filterword: Analysis
 ---
 

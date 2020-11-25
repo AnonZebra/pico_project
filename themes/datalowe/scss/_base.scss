@@ -34,12 +34,24 @@ h6 {
 
 h2 {
     margin-top: 1.3em;
+    font-size: $h1-font-size * 0.8;
+}
+
+h3 {
+    margin-top: 0.4em;
+    font-size: $h1-font-size * 0.6;
+}
+
+h4 {
+    margin-top: 0.3em;
+    font-size: $h1-font-size * 0.55;
 }
 
 p {
     color: $neutral-text-color;
     font-size: $p-font-size;
     margin-bottom: $line-height * $p-font-size;
+    margin-top: $line-height * $p-font-size / 3;
 }
 
 q {
@@ -64,7 +76,18 @@ ul {
     list-style-type: none;
 }
 
-ul li {
+ol {
+    list-style-position: inside;
+}
+
+ul,
+ol {
+    margin-bottom: $line-height * $p-font-size;
+    margin-top: $line-height * $p-font-size / 3;
+}
+
+ul li,
+ol li {
     margin: 0.3em 0;
 }
 

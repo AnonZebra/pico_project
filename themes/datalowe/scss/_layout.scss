@@ -142,8 +142,9 @@ nav a:hover,
 
 .site-footer q,
 .site-footer p {
-    font-size: 0.7rem;
+    font-size: 1rem;
     margin-bottom: 0;
+    color: $header-link-color;
 }
 
 
@@ -182,5 +183,10 @@ nav a:hover,
 
     .js .nav-toggle>* {
         vertical-align: middle;
+    }
+
+    .site-footer q,
+    .site-footer p {
+        font-size: 0.8rem;
     }
 }

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass datalowe/scss/style.scss datalowe/css/style.css --no-source-map",
+    "style": "sass datalowe/scss/style.scss datalowe/css/style.css --no-source-map & sass datalowe/scss/dark-style.scss datalowe/css/dark-style.css --no-source-map",
     "darkstyle": "sass datalowe/scss/dark-style.scss datalowe/css/dark-style.css --no-source-map",
     "style-min": "sass datalowe/scss/style.scss datalowe/css/style.min.css --no-source-map --style compressed"
   },

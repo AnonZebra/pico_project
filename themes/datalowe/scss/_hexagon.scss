@@ -1,0 +1,112 @@
+$hexagon-side-length: 100px;
+$hexagon-border-width: 4px;
+
+$small-hexagon-side-length: 60px;
+$small-hexagon-border-width: 2px;
+
+/* hexagon based on https://stackoverflow.com/questions/19418486/hexagon-shape-with-a-border-outline
+and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
+.hexagon {
+    position: relative;
+    height: $hexagon-side-length * 2.414;
+    width: $hexagon-side-length * 2.414;
+    background: $base-color;
+    color: $hexagon-bright-color;
+}
+
+.hexagon::before,
+.double::after {
+    position: absolute;
+    content: '';
+}
+
+.hexagon::before {
+    top: $hexagon-border-width;  /* border width */
+    left: $hexagon-border-width;  /* border width */
+    height: calc(100% - #{$hexagon-border-width * 2});  /* 100% - (2 * border width) */
+    width: calc(100% - #{$hexagon-border-width * 2});  /* 100% - (2 * border width) */
+    background: $hexagon-bright-color;
+}
+
+.hexagon,
+.hexagon::before,
+.double::after {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.double::after {
+    top: 8px;
+    left: 8px;
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+    background: $base-color;
+}
+
+a:active .hexagon::before,
+a:hover .hexagon::before {
+    background: $header-active-color;
+}
+
+.hexagon h2 {
+    font-size: $hexagon-side-length / 3;
+}
+
+.hexagon p {
+    font-size: $hexagon-side-length / 4;
+}
+
+// small hexagon
+.small-hexagon {
+    position: relative;
+    height: $small-hexagon-side-length * 2.414;
+    width: $small-hexagon-side-length * 2.414;
+    background: $base-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $hexagon-bright-color;
+}
+
+.small-hexagon::before,
+.small-double::after {
+    position: absolute;
+    content: '';
+}
+
+.small-hexagon::before {
+    top: $small-hexagon-border-width;  /* border width */
+    left: $small-hexagon-border-width;  /* border width */
+    height: calc(100% - #{$small-hexagon-border-width * 2});  /* 100% - (2 * border width) */
+    width: calc(100% - #{$small-hexagon-border-width * 2});  /* 100% - (2 * border width) */
+    background: $hexagon-bright-color;
+}
+
+a:active .small-hexagon::before,
+a:hover .small-hexagon::before {
+    background: $header-active-color;
+}
+
+.small-hexagon,
+.small-hexagon::before,
+.small-double::after {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.small-double::after {
+    top: 8px;
+    left: 8px;
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+    background: $base-color;
+}
+
+// resizing hexagons, based on screen width
+@media only screen and (max-width: 900px) {
+    .small-hexagon {
+        position: relative;
+        height: $small-hexagon-side-length * 2.1;
+        width: $small-hexagon-side-length * 2.1;
+        background: $base-color;
+        color: $hexagon-bright-color;
+    }
+}

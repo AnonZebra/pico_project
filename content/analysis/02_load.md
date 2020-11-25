@@ -4,7 +4,7 @@ Description: Analysis 2
 Intro: Page speeds
 Template: kmom
 Wrapclass: kmom
-Wrapclass_secondary: analysis
+Wrapclass_secondary: analysis-detail
 Filterword: Analysis
 ---
 

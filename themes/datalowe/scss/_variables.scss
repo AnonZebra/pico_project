@@ -15,7 +15,7 @@ $middleground-color: #fff; // white, element that holds content (eg article)
 
 // link text, inline text
 $neutral-text-color: #333; // greyish black
-$neutral-link-color: #1ce0eb; // light mint
+$neutral-link-color: scale-color(#1ce0eb, $lightness: -40%); // light mint
 $visited-link-color: #0b969e; // dark mint-green-ish
 $active-link-color: scale-color($neutral-link-color, $lightness: 10%);
 $h-element-color: $base-color;
