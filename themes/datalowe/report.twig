@@ -1,6 +1,6 @@
 {% extends 'base_twigs/base.twig' %}
 {% block bodycontent %}
-    <div class="grid-root {{ meta.wrapclass }}-root">
+    <div class="grid-root {% if meta.wrapclass %} {{ meta.wrapclass}}-root{% endif %} {% if meta.wrapclass_secondary %} {{ meta.wrapclass_secondary}}-root{% endif %}">
         {% include 'base_twigs/header.twig' %}
         <main class="grid-main{% if meta.wrapclass %} grid-main-{{ meta.wrapclass}}{% endif %}">
             <div class="content-wrapper">
@@ -22,19 +22,21 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <div class="report-project">
-                <a href="{{ attribute(pages, "report/kmom10").url }}">
-                    <div class="report-box hexagon double">
-                        <div class="report-box-inner">
-                            <h2 class="report-box-title">{{ attribute(pages, "report/kmom10").title }}</h2>
-                            <p class="report-box-intro">{{ attribute(pages, "report/kmom10").meta.intro }}</p>
-                            <img src="{{ base_url }}/{% if config.session.theme == "dark" %}{{ pages["report/kmom10"].meta.imagedark|url }}
-                            {% else %}{{ pages["report/kmom10"].meta.image|url }}{% endif %}"
-                            alt="{{ pages["report/kmom10"].meta.imagedesc }}" />
+            {% if meta.bigrow %}
+                <div class="report-project">
+                    <a href="{{ attribute(pages, "report/kmom10").url }}">
+                        <div class="report-box hexagon double">
+                            <div class="report-box-inner">
+                                <h2 class="report-box-title">{{ attribute(pages, "report/kmom10").title }}</h2>
+                                <p class="report-box-intro">{{ attribute(pages, "report/kmom10").meta.intro }}</p>
+                                <img src="{{ base_url }}/{% if config.session.theme == "dark" %}{{ pages["report/kmom10"].meta.imagedark|url }}
+                                {% else %}{{ pages["report/kmom10"].meta.image|url }}{% endif %}"
+                                alt="{{ pages["report/kmom10"].meta.imagedesc }}" />
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
+            {% endif %}
         </main>
         {% include 'base_twigs/footer.twig' %}
     </div>

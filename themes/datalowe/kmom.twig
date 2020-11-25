@@ -1,11 +1,12 @@
 {% extends 'base_twigs/base.twig' %}
 {% block bodycontent %}
-<div class="grid-root {{ meta.wrapclass }}-root">
+<div class="grid-root {% if meta.wrapclass %} {{ meta.wrapclass}}-root{% endif %} {% if meta.wrapclass_secondary %} {{ meta.wrapclass_secondary}}-root{% endif %}">
     {% include 'base_twigs/header.twig' %}
     <aside class="sidebar">
         <ul class="report-box-list">
             {% for page in pages %}
-                {% if 'Kursmoment' in page.description %}
+                {{ page.filterword }}
+                {% if meta.filterword == page.meta.filterword %}
                     <li class="report-box-li">
                         <a href="{{ page.url }}">
                             <div class="report-box small-hexagon small-double">
@@ -19,7 +20,7 @@
             {% endfor %}
         </ul>
     </aside>
-    <main class="grid-main{% if meta.wrapclass %} grid-main-{{ meta.wrapclass}}{% endif %}">
+    <main class="grid-main{% if meta.wrapclass %} grid-main-{{ meta.wrapclass}}{% endif %} {% if meta.wrapclass_secondary %} grid-main-{{ meta.wrapclass_secondary}}{% endif %}">
         <div class="content-wrapper">
             {{ content }}
         </div>

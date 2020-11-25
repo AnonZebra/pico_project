@@ -4,6 +4,7 @@ Description: Kursmoment 1
 Intro: Tagga till med Gittan
 Template: kmom
 Wrapclass: kmom
+Filterword: Kursmoment
 ---
 
 # Kursmoment 1

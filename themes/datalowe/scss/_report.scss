@@ -128,6 +128,7 @@ a:hover .hexagon::before {
 }
 
 // rearranging/resizing hexagons and main element, based on screen width
+// shift to two hexagons/row
 @media only screen and (max-width: $hexagon-side-length * 2.4 * 3 + $hexagon-side-length * 0.5) {
     .report-box-list {
         grid-template-columns: 1fr 1fr;
@@ -139,6 +140,7 @@ a:hover .hexagon::before {
     }
 }
 
+// shift to one hexagon/row
 @media only screen and (max-width: $hexagon-side-length * 2.4 * 2 + $hexagon-side-length * 0.5) {
     .report-box-list {
         grid-template-columns: 1fr;

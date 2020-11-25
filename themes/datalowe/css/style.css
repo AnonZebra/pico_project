@@ -7132,3 +7132,21 @@ a:hover .small-hexagon::before {
     background-image: linear-gradient(#fff, #f5e8f0);
   }
 }
+.grid-main-analysis {
+  grid-template-rows: 0.3fr 1fr;
+}
+
+.grid-main-analysis .report-box-list {
+  grid-template-rows: 1fr;
+}
+
+@media only screen and (max-width: 770px) {
+  .grid-main-analysis {
+    grid-template-rows: 0.3fr 3fr;
+  }
+
+  .grid-main-analysis .report-box-list {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}

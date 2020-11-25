@@ -4,6 +4,7 @@ Description: Kursmoment 2
 Intro: Don't give me no Sass, CSS
 Wrapclass: kmom
 Template: kmom
+Filterword: Kursmoment
 ---
 
 # Kursmoment 2

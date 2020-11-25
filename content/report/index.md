@@ -1,9 +1,10 @@
 ---
-Title: Rapporter
-Description: Kursrapporter
+Title: Reports
+Description: Course reports
 Template: report
 Wrapclass: report
 Author: Lowe Wilsson
+Bigrow: True
 ---
 
 Kursrapporter

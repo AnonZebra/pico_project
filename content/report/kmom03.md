@@ -4,6 +4,7 @@ Description: Kursmoment 3
 Intro: Flexing grids
 Wrapclass: kmom
 Template: kmom
+Filterword: Kursmoment
 ---
 
 # Kursmoment 3

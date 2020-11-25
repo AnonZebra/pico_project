@@ -1,0 +1,21 @@
+// report main element
+.grid-main-analysis {
+    grid-template-rows: 0.3fr 1fr;
+}
+
+.grid-main-analysis .report-box-list {
+    grid-template-rows: 1fr;
+}
+
+// shift to one hexagon/row right away, to avoid different number of hexagons
+// on rows
+@media only screen and (max-width: $hexagon-side-length * 2.4 * 3 + $hexagon-side-length * 0.5) {
+    .grid-main-analysis {
+        grid-template-rows: 0.3fr 3fr;
+    }
+
+    .grid-main-analysis .report-box-list {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}

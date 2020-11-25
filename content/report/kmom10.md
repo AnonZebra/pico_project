@@ -7,6 +7,7 @@ ImageDark: assets/img/dinosaur-dark.svg
 ImageDesc: A pixel dinosaur
 Wrapclass: kmom
 Template: kmom
+Filterword: Kursmoment
 ---
 
 # Kursmoment 10
