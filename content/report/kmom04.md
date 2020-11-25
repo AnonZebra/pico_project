@@ -1,7 +1,7 @@
 ---
 Title: Kmom 4
 Description: Kursmoment 4
-Intro: Placeholder
+Intro: Color me surprised
 Wrapclass: kmom
 Template: kmom
 Filterword: Kursmoment
