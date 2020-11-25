@@ -25,3 +25,5 @@ Jag har jobbat med gradients och är nöjd med dem, de gör sidan mer intressant
 Jag har prövat att använda Githubs issue tracker för ett par småsaker för att lära mig bättre hur den fungerar. Jag har också försökt att vara mer konsekvent och periodisk i att göra commits av uppdateringar så att det ska gå bättre att beskriva vad som faktiskt ändrats, istället för att ladda upp en hel drös med saker på en gång.
 
 Det är svårare att redovisa, men jag skapade också ett enkelt bash-script för att kunna applicera styling respektive köra linter direkt från den mapp som jag kör `php -S localhost:8000` från när jag testar sidan lokalt. Det här snabbade upp rundturerna med att uppdatera kod i Atom, kontrollera och uppdatera sidans styling, och serva sidan lokalt.
+
+Typsnitten lät jag vara de samma som tidigare. Jag är väldigt nöjd med Montserrat för headers och navigation, den är estetiskt tilltalande och tydlig samtidigt som den inte är tillkonstlad, vilket är bra när det redan händer så mycket med färger och olika designgrepp i övrigt. Men jag märkte i alla fall nu att jag missat att byta ut Helvetica mot Montserrat på flera ställen och fixade det.
