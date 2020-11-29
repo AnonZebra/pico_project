@@ -6861,6 +6861,23 @@ main .profile img {
   margin-left: 0.2em;
 }
 
+.code-block {
+  display: inline-block;
+  background-color: #000;
+  width: 80%;
+  overflow: auto;
+}
+
+.code-block > pre {
+  overflow: auto;
+}
+
+.code-block > pre > code {
+  color: #fff;
+  width: 80%;
+  overflow: auto;
+}
+
 /* hexagon based on https://stackoverflow.com/questions/19418486/hexagon-shape-with-a-border-outline
 and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
 .hexagon {
@@ -7128,11 +7145,10 @@ a:active > .report-box > .report-box-inner > p {
 
 .sidebar > .report-box-list {
   margin: 10px 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto auto auto;
-  align-content: space-around;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
   grid-gap: 0.2rem;
 }
 

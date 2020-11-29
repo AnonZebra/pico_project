@@ -1,0 +1,17 @@
+// Code blocks module
+.code-block {
+    display: inline-block;
+    background-color: #000;
+    width: 80%;
+    overflow: auto;
+}
+
+.code-block > pre {
+    overflow: auto;
+}
+
+.code-block > pre > code {
+    color: #fff;
+    width: 80%;
+    overflow: auto;
+}
