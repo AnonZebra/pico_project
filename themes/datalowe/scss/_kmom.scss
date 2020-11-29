@@ -34,7 +34,6 @@
     border-radius: $m-border-radius;
     background-image: linear-gradient(scale-color($base-color, $lightness: $gradient-top),
 scale-color($base-color, $lightness: $gradient-bottom));
-    // background-color: scale-color($base-color, $lightness: 20%);
     border-width: 5px;
     border-style: none solid solid;
     border-image: linear-gradient(to top, #555, rgba(0, 0, 0, 0)) 1 20%;
@@ -43,11 +42,10 @@ scale-color($base-color, $lightness: $gradient-bottom));
 
 .sidebar > .report-box-list {
     margin: 10px 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto;
-    align-content: space-around;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
     grid-gap: 0.2rem;
 }
 
