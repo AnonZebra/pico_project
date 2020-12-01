@@ -83,7 +83,8 @@ page_dict = {'url': [], 'platform': [], 'performance_score': []}
 <span class="code-comment"># define metric names and their corresponding keys in the returned JSON</span>
 <span class="code-comment"># object</span>
 metric_names = {
-    'first_contentful_paint': 'first-contentful-paint',
+    'first_contentful_paint': 'first-contentful-paint,
+    'speed_index': 'speed-index',
     'largest_contentful_paint': 'largest-contentful-paint',
     'time_to_interactive': 'interactive',
     'total_blocking_time': 'total-blocking-time',
