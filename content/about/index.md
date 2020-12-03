@@ -1,5 +1,5 @@
 ---
-Title: About this website
+Title: About
 Description: Information about how the website is built and related tools
 ---
 
