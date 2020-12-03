@@ -54,6 +54,17 @@ p {
     margin-top: $line-height * $p-font-size / 3;
 }
 
+blockquote {
+    @extend %sub-content-border;
+    margin-left: 1em;
+    padding: 1em;
+    color: $neutral-text-color;
+    font-size: $p-font-size;
+    margin-bottom: $line-height * $p-font-size;
+    margin-top: $line-height * $p-font-size / 3;
+    font-size: 1rem;
+}
+
 q {
     font-style: italic;
 }

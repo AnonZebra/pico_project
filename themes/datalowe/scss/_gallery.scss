@@ -13,6 +13,7 @@
 
 .gallery-list-item > picture > img {
     border-radius: $m-border-radius;
+      filter: brightness($img-brightness) contrast($img-contrast);
 }
 
 .gallery-video-container {

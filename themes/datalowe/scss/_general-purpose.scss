@@ -27,3 +27,10 @@
     border-width: 2px;
     border-style: dashed;
 }
+
+%sub-content-border {
+    border-radius: $m-border-radius;
+    border-color: $alt-alt-color;
+    border-width: 2px;
+    border-style: solid;
+}

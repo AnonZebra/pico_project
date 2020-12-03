@@ -6539,6 +6539,16 @@ p {
   margin-top: 0.5833333333em;
 }
 
+blockquote {
+  margin-left: 1em;
+  padding: 1em;
+  color: #333;
+  font-size: 1.25em;
+  margin-bottom: 1.75em;
+  margin-top: 0.5833333333em;
+  font-size: 1rem;
+}
+
 q {
   font-style: italic;
 }
@@ -6589,6 +6599,10 @@ main {
   min-height: 80vh;
 }
 
+img, embed, object, video {
+  max-width: 100%;
+}
+
 @media (max-width: 500px) {
   h1 {
     font-size: 2.3958333333em;
@@ -6627,6 +6641,13 @@ main {
   border-color: #ebcd1c;
   border-width: 2px;
   border-style: dashed;
+}
+
+blockquote {
+  border-radius: 10px;
+  border-color: #9e136b;
+  border-width: 2px;
+  border-style: solid;
 }
 
 /* Grid root wrapper (basic) */
@@ -7277,6 +7298,7 @@ a:active > .report-box > .report-box-inner > p {
 
 .gallery-list-item > picture > img {
   border-radius: 10px;
+  filter: brightness(1) contrast(1);
 }
 
 .gallery-video-container {

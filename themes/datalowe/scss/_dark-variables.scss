@@ -43,3 +43,8 @@ $hexagon-dark-color: scale-color($hexagon-dark-color, $lightness: -20%);
 // how much to change lightness of alt-alt-color by for kmom
 // narrow screen gradient
 $kmom-alt-gradient-shift: -60%;
+
+// brightness/contrast values for images that are to shift
+// between light/dark mode
+$img-brightness: 0.8;
+$img-contrast: 1.2;

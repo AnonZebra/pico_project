@@ -42,6 +42,12 @@ $footer-text-color: #fff; // white
 // modules
 $hexagon-bright-color: #fff;
 $hexagon-dark-color: #000;
+
 // how much to change lightness of alt-alt-color by for kmom
 // narrow screen gradient
 $kmom-alt-gradient-shift: 90%;
+
+// brightness/contrast values for images that are to shift
+// between light/dark mode
+$img-brightness: 1.0;
+$img-contrast: 1.0;

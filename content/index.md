@@ -5,7 +5,7 @@ Author: Lowe Wilsson
 Wrapclass: profile
 Template: index
 ---
-![Lowe Wilsson profile picture" class](%assets_url%/img/lowe_wilsson_profile.jpeg)
+![Lowe Wilsson profile picture" class](%base_url%/image/lowe_wilsson_profile.jpeg&w=600)
 
 Hello!
 ==========================
