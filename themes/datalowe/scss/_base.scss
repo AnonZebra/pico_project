@@ -104,8 +104,15 @@ main {
     min-height: 80vh;
 }
 
+img, embed, object, video {
+    max-width: 100%;
+}
+
 @media (max-width: 500px) {
     h1 {
-        font-size: $h1-font-size / 1.7;
+        font-size: $h1-font-size / 1.2;
+    }
+    h2 {
+        font-size: $h1-font-size * 0.8 / 1.2;
     }
 }

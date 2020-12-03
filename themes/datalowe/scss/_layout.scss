@@ -1,7 +1,6 @@
 /* Grid root wrapper (basic) */
 .grid-root {
     display: grid;
-    // height: 200vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
@@ -57,8 +56,6 @@
     display: flex;
     flex: initial;
     height: 20%;
-    /* flex-basis: 1%; */
-    // border-radius: 20%;
 }
 
 

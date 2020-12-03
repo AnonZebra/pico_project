@@ -27,13 +27,13 @@
 }
 
 .grid-main-kmom ul {
-    list-style-type:disc;
+    list-style-type: disc;
     list-style-position: inside;
 }
 
 .grid-main-kmom ul li::marker {
     color: $alt-alt-color;
-    content: "►";
+    content: '►';
 }
 
 // sidebar, filling up one column of 'main row'

@@ -9,3 +9,9 @@
 .icon-link {
     margin-left: 0.2em;
 }
+@media (max-width: 600px) {
+    .social {
+        color: #f00;
+        font-size: 1.4rem;
+    }
+}

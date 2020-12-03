@@ -6591,7 +6591,11 @@ main {
 
 @media (max-width: 500px) {
   h1 {
-    font-size: 1.6911764706em;
+    font-size: 2.3958333333em;
+  }
+
+  h2 {
+    font-size: 1.9166666667em;
   }
 }
 /* Across-modules base classes */
@@ -6680,7 +6684,6 @@ main {
   display: flex;
   flex: initial;
   height: 20%;
-  /* flex-basis: 1%; */
 }
 
 /* Navigation */
@@ -6861,6 +6864,12 @@ main .profile img {
   margin-left: 0.2em;
 }
 
+@media (max-width: 600px) {
+  .social {
+    color: #f00;
+    font-size: 1.4rem;
+  }
+}
 .code-block {
   border-radius: 10px;
   background-color: #000;
@@ -7220,6 +7229,7 @@ a:active > .report-box > .report-box-inner > p {
 }
 .grid-main-analysis-detail img {
   max-width: 85%;
+  max-height: 70vh;
   display: block;
   margin: 2rem 0;
 }
@@ -7250,4 +7260,43 @@ a:active > .report-box > .report-box-inner > p {
 
 .analysis-detail-root .sidebar > .report-box-list {
   grid-template-rows: auto auto auto;
+}
+
+.grid-main-gallery {
+  grid-template-rows: 1fr;
+}
+
+.gallery-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.gallery-list-item > picture > img {
+  border-radius: 10px;
+}
+
+.gallery-video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.gallery-video-container > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .gallery-list {
+    grid-template-columns: 1fr;
+  }
 }
