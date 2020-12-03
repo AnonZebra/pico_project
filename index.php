@@ -30,8 +30,13 @@ $pico = new Pico(
 
 // override configuration?
 // EDITED, make session info available in twig files by using 'config.session'
+// form array which holds all of the names of gallery image files
 $pico->setConfig(array(
-    'session' => $_SESSION
+    'session' => $_SESSION,
+    'imageGallery' => array_filter(
+        scandir("assets/img/gallery/"), function($inStr) {
+            return preg_match("/^[^.]/", $inStr);
+        })
 ));
 
 // ADDED
