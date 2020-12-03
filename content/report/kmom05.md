@@ -1,7 +1,7 @@
 ---
 Title: Kmom 5
 Description: Kursmoment 5
-Intro: Placeholder
+Intro: Hospital blues
 Wrapclass: kmom
 Template: kmom
 Filterword: Kursmoment
