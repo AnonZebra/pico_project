@@ -15,8 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "normalize.css": "^8.0.1",
-    "sass": "^1.29.0",
-    "stylelint": "^13.7.2",
+    "sass": "^1.30.0",
+    "stylelint": "^13.8.0",
     "stylelint-config-sass-guidelines": "^7.1.0"
   },
   "dependencies": {
