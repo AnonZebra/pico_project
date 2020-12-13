@@ -119,6 +119,11 @@ img, embed, object, video {
     max-width: 100%;
 }
 
+// for finding img elements with missing alt attribute
+img:not([alt]) {
+    outline: 4px red dashed !important;
+}
+
 @media (max-width: 500px) {
     h1 {
         font-size: $h1-font-size / 1.2;

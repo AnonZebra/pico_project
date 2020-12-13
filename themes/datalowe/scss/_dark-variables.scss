@@ -14,6 +14,7 @@ $l-lightness-increase: 50%;
 // smaller components pop out
 $alt-alt-color: scale-color($alt-alt-color, $lightness: 20%);
 $base-color: scale-color($base-color, $lightness: $m-lightness-decrease);
+$pattern-color: '%2340acb4'; // color for header/footer repeating pattern
 // $alt-color: scale-color($alt-color, $lightness: $base-lightness-decrease);
 // $alt-alt-color: scale-color($alt-alt-color, $lightness: $base-lightness-decrease);
 $background-color: scale-color($background-color, $lightness: $xxl-lightness-decrease);

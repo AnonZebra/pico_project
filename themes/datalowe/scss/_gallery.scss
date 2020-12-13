@@ -13,7 +13,12 @@
 
 .gallery-list-item > picture > img {
     border-radius: $m-border-radius;
-      filter: brightness($img-brightness) contrast($img-contrast);
+    filter: grayscale(100%) brightness($img-brightness) contrast($img-contrast);
+    transition: .8s ease-in-out;
+}
+
+.gallery-list-item > picture > img:hover {
+    filter: grayscale(0) brightness($img-brightness) contrast($img-contrast);
 }
 
 .gallery-video-container {
@@ -32,11 +37,14 @@
     height: 100%;
 }
 
-// @media only screen and (max-width: 900px) {
-//     .gallery-list {
-//         grid-template-columns: repeat(2, 1fr);
-//     }
-// }
+@media only screen and (max-width: 900px) {
+    // .gallery-list {
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
+    .gallery-list-item > picture > img {
+        filter: brightness($img-brightness) contrast($img-contrast);
+    }
+}
 
 @media only screen and (max-width: 700px) {
     .gallery-list {
