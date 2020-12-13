@@ -8,9 +8,9 @@
                     <a href="{{ base_url }}/image/gallery/{{ imgFile }}">
                         <li class="gallery-list-item">
                             <picture>
-                                <source media="(min-width: 1250px)" srcset="{{ base_url }}/image/gallery/{{ imgFile }}?w=360">
-                                <source media="(min-width: 950px)" srcset="{{ base_url }}/image/gallery/{{ imgFile }}?w=280">
-                                <source media="(min-width: 700px)" srcset="{{ base_url }}/image/gallery/{{ imgFile }}?w=200">
+                                <source media="(min-width: 1250px)" srcset="{{ base_url }}/image/gallery/{{ imgFile }}?w=360&h=250&crop-to-fit">
+                                <source media="(min-width: 950px)" srcset="{{ base_url }}/image/gallery/{{ imgFile }}?w=280&h=200&crop-to-fit">
+                                <source media="(min-width: 700px)" srcset="{{ base_url }}/image/gallery/{{ imgFile }}?w=200&h=170&crop-to-fit">
                                 <img src="{{ base_url }}/image/gallery/{{ imgFile }}?w=300" alt="Experiment image"/>
                             </picture>
                         </li>
