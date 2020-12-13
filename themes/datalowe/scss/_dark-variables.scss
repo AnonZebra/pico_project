@@ -8,24 +8,26 @@ $xxl-lightness-decrease: -80%;
 $s-lightness-increase: 10%;
 $m-lightness-increase: 30%;
 $l-lightness-increase: 50%;
+$xl-lightness-increase: 70%;
 
 // base
 // increasing lightness of second alt color, since it's used for making
 // smaller components pop out
 $alt-alt-color: scale-color($alt-alt-color, $lightness: 20%);
+// $alt-alt-color: scale-color($alt-alt-color, $lightness: $s-lightness-decrease);
 $base-color: scale-color($base-color, $lightness: $m-lightness-decrease);
 $pattern-color: '%2340acb4'; // color for header/footer repeating pattern
-// $alt-color: scale-color($alt-color, $lightness: $base-lightness-decrease);
+$alt-color: scale-color($alt-color, $lightness: $s-lightness-increase);
 // $alt-alt-color: scale-color($alt-alt-color, $lightness: $base-lightness-decrease);
 $background-color: scale-color($background-color, $lightness: $xxl-lightness-decrease);
 $middleground-color: scale-color($middleground-color, $lightness: $xl-lightness-decrease);
 
 // link text, inline text
 $neutral-text-color: #eee;
-$neutral-link-color: scale-color($neutral-link-color, $lightness: $s-lightness-increase);
-$visited-link-color: scale-color($visited-link-color, $lightness: $s-lightness-increase);
-$active-link-color: scale-color($neutral-link-color, $lightness: $m-lightness-increase);
-$h-element-color: scale-color($h-element-color, $lightness: $l-lightness-increase);
+$neutral-link-color: scale-color($neutral-link-color, $lightness: $l-lightness-increase);
+$visited-link-color: scale-color($visited-link-color, $lightness: $l-lightness-increase);
+$active-link-color: scale-color($neutral-link-color, $lightness: $xl-lightness-increase);
+$h-element-color: scale-color($h-element-color, $lightness: $m-lightness-increase);
 
 // gradients
 // top value, to increase base color by

@@ -9,7 +9,7 @@
             <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
             {% for social in pages["_meta"].meta.social %}
                 <a href="{{ social.url }}" title="{{ social.title }}" class="icon-link">
-                    <i class="{{ social.icon }} logo" aria-hidden="true"></i>
+                    <i class="{{ social.icon }} logo"></i>
                     <span class="sr-only">{{ social.title }}</span>
                 </a>
             {% endfor %}

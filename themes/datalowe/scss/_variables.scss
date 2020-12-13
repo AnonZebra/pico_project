@@ -9,16 +9,23 @@
 $base-color: #0b969e; // dark mint-green-ish
 $pattern-color: '%2360ecf4'; // color for header/footer repeating pattern
 $alt-color: #ebcd1c; // damp yellow
-$alt-alt-color: #9e136b; // light purple/pinkish
+// $alt-alt-color: #f7e8f7;
+$alt-alt-color: #fc88fc;
+// $alt-alt-color: #fff;
+// $alt-alt-color: #BB5997; // light purple/pinkish
 // $alt-alt-color: #EB0596; // light purple/pinkish
 $background-color: #fdfdfd; // slightly yellow, element in the far background (body usually)
 $middleground-color: #fff; // white, element that holds content (eg article)
 
 // link text, inline text
 $neutral-text-color: #333; // greyish black
-$neutral-link-color: scale-color(#1ce0eb, $lightness: -40%); // light mint
-$visited-link-color: #0b969e; // dark mint-green-ish
+$neutral-link-color: scale-color(#1ce0eb, $lightness: -60%); // light mint
+// $neutral-link-color: #000; // light mint
+// $visited-link-color: #0b969e; // dark mint-green-ish
+$visited-link-color: scale-color($neutral-link-color, $lightness: -20%); // dark mint-green-ish
+// $visited-link-color: #000; // dark mint-green-ish
 $active-link-color: scale-color($neutral-link-color, $lightness: 10%);
+// $active-link-color: scale-color($neutral-link-color, $lightness: -40%);
 $h-element-color: $base-color;
 
 // text blocks

@@ -1,13 +1,13 @@
 <header class="site-header">
     {% if pages["_meta"].meta.logo %}
-        <div class="logo" aria-hidden="true">
+        <div class="logo">
             <a href="{{ "index"|link }}">
-                <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="" />
+                <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="Site logo, linking to start/welcome page" />
             </a>
         </div>
     {% endif %}
-    <a id="nav-toggle" class="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
-        <i class="fa fa-bars" aria-hidden="true" id="toggler"></i>
+    <a id="nav-toggle" class="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="0">
+        <i class="fa fa-bars" id="toggler"></i>
         <span class="sr-only">Toggle Menu</span>
     </a>
     <nav id="nav" role="navigation" tabindex="-1">

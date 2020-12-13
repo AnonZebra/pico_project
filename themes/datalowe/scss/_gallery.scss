@@ -11,13 +11,13 @@
     align-content: center;
 }
 
-.gallery-list-item > picture > img {
+.gallery-list-item > a > picture > img {
     border-radius: $m-border-radius;
     filter: grayscale(100%) brightness($img-brightness) contrast($img-contrast);
     transition: .8s ease-in-out;
 }
 
-.gallery-list-item > picture > img:hover {
+.gallery-list-item > a > picture > img:hover {
     filter: grayscale(0) brightness($img-brightness) contrast($img-contrast);
 }
 

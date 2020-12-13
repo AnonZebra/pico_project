@@ -6513,7 +6513,7 @@ h4,
 h5,
 h6 {
   font-family: Montserrat, Helvetica, sans-serif;
-  color: #60ecf4;
+  color: #20e4ef;
   font-weight: 400;
 }
 
@@ -6554,17 +6554,17 @@ q {
 }
 
 a {
-  color: #10a9b1;
+  color: #45e6ef;
   text-decoration: none;
 }
 
 a:visited {
-  color: #0db4be;
+  color: #3be4ee;
 }
 
 a:hover,
 a:active {
-  color: #33e3ed;
+  color: #c7f7fa;
 }
 
 ul {
@@ -6642,14 +6642,14 @@ img:not([alt]) {
 
 .grid-main-kmom > .content-wrapper, main .container {
   border-radius: 10px;
-  border-color: #ebcd1c;
+  border-color: #edd233;
   border-width: 2px;
   border-style: dashed;
 }
 
 blockquote {
   border-radius: 10px;
-  border-color: #d91a93;
+  border-color: #fda0fd;
   border-width: 2px;
   border-style: solid;
 }
@@ -6690,7 +6690,7 @@ blockquote {
 .site-header a:active {
   background: none;
   text-decoration: none;
-  color: #ebcd1c;
+  color: #edd233;
   text-shadow: 0.2em 0.2em 0px rgba(0, 0, 0, 0.8);
 }
 
@@ -6790,7 +6790,7 @@ nav a:hover,
 
 .site-footer a:hover,
 .site-footer a:active {
-  color: #ebcd1c;
+  color: #edd233;
 }
 
 .site-footer q,
@@ -6873,7 +6873,7 @@ main .profile img {
   border-radius: 100%;
   border-width: 10px;
   border-style: double;
-  border-color: #08696f;
+  border-color: #20e4ef;
   margin: 5px 0 20px;
 }
 
@@ -6905,7 +6905,7 @@ main .profile img {
 }
 
 .code-comment {
-  color: #d91a93;
+  color: #fda0fd;
 }
 
 /* Social module */
@@ -6970,7 +6970,7 @@ and https://css-tricks.com/snippets/css/hexagon-with-shadow/ */
 
 a:active .hexagon::before,
 a:hover .hexagon::before {
-  background: #ebcd1c;
+  background: #edd233;
 }
 
 .hexagon h2 {
@@ -7012,7 +7012,7 @@ a:hover .hexagon::before {
 
 a:active .small-hexagon::before,
 a:hover .small-hexagon::before {
-  background: #ebcd1c;
+  background: #edd233;
 }
 
 .small-hexagon,
@@ -7067,8 +7067,9 @@ a:hover .small-hexagon::before {
 }
 
 .report-box-inner > h2 {
-  color: #d91a93;
+  color: #fda0fd;
   margin: 0 0 0.2em;
+  text-shadow: 2px 2px 0px #000;
 }
 
 .report-box-inner > p {
@@ -7078,7 +7079,7 @@ a:hover .small-hexagon::before {
 
 a:hover > .report-box > .report-box-inner > p,
 a:active > .report-box > .report-box-inner > p {
-  color: #ebcd1c;
+  color: #edd233;
 }
 
 .report-box-inner > img {
@@ -7185,7 +7186,7 @@ a:active > .report-box > .report-box-inner > p {
 }
 
 .grid-main-kmom ul li::marker {
-  color: #d91a93;
+  color: #fda0fd;
 }
 
 .sidebar {
@@ -7239,7 +7240,7 @@ a:active > .report-box > .report-box-inner > p {
     margin-right: 0;
     border: 0;
     box-shadow: none;
-    background-image: linear-gradient(#4d4d4d, #441e36);
+    background-image: linear-gradient(#4d4d4d, #7a2b7a);
   }
 }
 .grid-main-analysis {
@@ -7308,13 +7309,13 @@ a:active > .report-box > .report-box-inner > p {
   align-content: center;
 }
 
-.gallery-list-item > picture > img {
+.gallery-list-item > a > picture > img {
   border-radius: 10px;
   filter: grayscale(100%) brightness(0.8) contrast(1.2);
   transition: 0.8s ease-in-out;
 }
 
-.gallery-list-item > picture > img:hover {
+.gallery-list-item > a > picture > img:hover {
   filter: grayscale(0) brightness(0.8) contrast(1.2);
 }
 

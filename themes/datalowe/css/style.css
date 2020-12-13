@@ -6554,17 +6554,17 @@ q {
 }
 
 a {
-  color: #0d8a91;
+  color: #095c61;
   text-decoration: none;
 }
 
 a:visited {
-  color: #0b969e;
+  color: #074a4d;
 }
 
 a:hover,
 a:active {
-  color: #10a9b1;
+  color: #0c7f86;
 }
 
 ul {
@@ -6649,7 +6649,7 @@ img:not([alt]) {
 
 blockquote {
   border-radius: 10px;
-  border-color: #9e136b;
+  border-color: #fc88fc;
   border-width: 2px;
   border-style: solid;
 }
@@ -6923,7 +6923,7 @@ main .profile img {
 }
 
 .code-comment {
-  color: #9e136b;
+  color: #fc88fc;
 }
 
 /* hexagon based on https://stackoverflow.com/questions/19418486/hexagon-shape-with-a-border-outline
@@ -7067,8 +7067,9 @@ a:hover .small-hexagon::before {
 }
 
 .report-box-inner > h2 {
-  color: #9e136b;
+  color: #fc88fc;
   margin: 0 0 0.2em;
+  text-shadow: 2px 2px 0px #000;
 }
 
 .report-box-inner > p {
@@ -7185,7 +7186,7 @@ a:active > .report-box > .report-box-inner > p {
 }
 
 .grid-main-kmom ul li::marker {
-  color: #9e136b;
+  color: #fc88fc;
 }
 
 .sidebar {
@@ -7239,7 +7240,7 @@ a:active > .report-box > .report-box-inner > p {
     margin-right: 0;
     border: 0;
     box-shadow: none;
-    background-image: linear-gradient(#fff, #f5e8f0);
+    background-image: linear-gradient(#fff, #fcf6fc);
   }
 }
 .grid-main-analysis {
@@ -7308,13 +7309,13 @@ a:active > .report-box > .report-box-inner > p {
   align-content: center;
 }
 
-.gallery-list-item > picture > img {
+.gallery-list-item > a > picture > img {
   border-radius: 10px;
   filter: grayscale(100%) brightness(1) contrast(1);
   transition: 0.8s ease-in-out;
 }
 
-.gallery-list-item > picture > img:hover {
+.gallery-list-item > a > picture > img:hover {
   filter: grayscale(0) brightness(1) contrast(1);
 }
 
