@@ -1,0 +1,35 @@
+to start making apache serve the site I ran `sudo vim /etc/apache2/httpd.conf` and
+edited the file like so:
+```
+#DocumentRoot "/Library/WebServer/Documents"
+#<Directory "/Library/WebServer/Documents">
+
+Define rootDir /Users/lowe/Sites/design/me/portfolio
+DocumentRoot "${rootDir}"
+<Directory "${rootDir}">
+```
+(I first tried with the original portfolio directory, but that became too convoluted
+because I would probably have to change the whole chain of directories' read/write
+permissions. Hence I created a new copy of the portfolio directory using
+`dbwebb clone design`, `cd design && mkdir me/portfolio` and then `dbwebb download portfolio`)
+
+
+
+
+first issue I bumped into was that the folder cache/cimage/fasttrack didn't exist (and couldn't be created by the Apache user).
+after creating the fasttrack folder, CImage complained that it didn't have write access.
+so I did a `sudo chown _www:_www cache/cimage`. after this, I could go directly to the
+address for img.php with GET parameters specifying an image and conversion parameters.
+however, the redirection didn't work as expected, meaning there was probably
+something wrong with the .htaccess file, or how it was being used.
+In '/etc/apache2/httpd.conf' I changed AllowOverride so that I then had (for the directory I'm using)
+```
+ #    AllowOverride None
+     AllowOverride All
+```
+To use Apache's rewrite module I also had to uncomment
+```
+LoadModule rewrite_module libexec/apache2/mod_rewrite.so
+```
+Finally, things seem to be working. I reach the site by simply visiting 'localhost' through
+the browser.
