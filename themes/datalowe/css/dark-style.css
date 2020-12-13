@@ -7068,7 +7068,7 @@ a:hover .small-hexagon::before {
 
 .report-box-inner > h2 {
   color: #fda0fd;
-  margin: 0 0 0.2em;
+  margin: 0.3em 0 0.2em;
   text-shadow: 2px 2px 0px #000;
 }
 
@@ -7167,6 +7167,7 @@ a:active > .report-box > .report-box-inner > p {
 }
 
 .grid-main-kmom {
+  display: grid;
   align-items: center;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -7178,6 +7179,10 @@ a:active > .report-box > .report-box-inner > p {
   background-color: #4d4d4d;
   padding: 2em;
   margin-right: 2rem;
+}
+
+.content-wrapper > blockquote {
+  max-width: 100%;
 }
 
 .grid-main-kmom ul {
@@ -7217,13 +7222,13 @@ a:active > .report-box > .report-box-inner > p {
 }
 
 .sidebar .report-box-inner > p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #cccccc;
 }
 
 @media only screen and (max-width: 900px) {
   .sidebar .report-box-inner > p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 700px) {

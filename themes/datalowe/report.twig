@@ -13,7 +13,7 @@
                             <a href="{{ child.page.url }}">
                                 <div class="report-box hexagon double">
                                     <div class="report-box-inner">
-                                        <h2 class="report-box-title"> {{ child.page.title }}</h2>
+                                        <h2 class="report-box-title"> {{ child.page.title|upper }}</h2>
                                         <p class="report-box-intro"> {{ child.page.meta.intro }}</p>
                                     </div>
                                 </div>
@@ -27,7 +27,7 @@
                     <a href="{{ attribute(pages, "report/kmom10").url }}">
                         <div class="report-box hexagon double">
                             <div class="report-box-inner">
-                                <h2 class="report-box-title">{{ attribute(pages, "report/kmom10").title }}</h2>
+                                <h2 class="report-box-title">{{ attribute(pages, "report/kmom10").title|upper }}</h2>
                                 <p class="report-box-intro">{{ attribute(pages, "report/kmom10").meta.intro }}</p>
                                 <img src="{{ base_url }}/{% if config.session.theme == "dark" %}{{ pages["report/kmom10"].meta.imagedark|url }}
                                 {% else %}{{ pages["report/kmom10"].meta.image|url }}{% endif %}"

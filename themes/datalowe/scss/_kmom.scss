@@ -12,6 +12,7 @@
 
 // kmom main element
 .grid-main-kmom {
+    display: grid;
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -24,6 +25,10 @@
     background-color: $middleground-color;
     padding: 2em;
     margin-right: 2rem;
+}
+
+.content-wrapper > blockquote {
+    max-width: 100%;
 }
 
 .grid-main-kmom ul {
@@ -66,13 +71,13 @@ scale-color($base-color, $lightness: $gradient-bottom));
 }
 
 .sidebar .report-box-inner > p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: $hexagon-bright-color;
 }
 
 @media only screen and (max-width: 900px) {
     .sidebar .report-box-inner > p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
