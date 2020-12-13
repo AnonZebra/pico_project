@@ -6603,6 +6603,10 @@ img, embed, object, video {
   max-width: 100%;
 }
 
+img:not([alt]) {
+  outline: 4px red dashed !important;
+}
+
 @media (max-width: 500px) {
   h1 {
     font-size: 2.3958333333em;
@@ -6668,9 +6672,10 @@ blockquote {
   color: #333;
   padding: 0 2em;
   align-items: center;
-  min-height: 60px;
+  min-height: 130px;
   justify-content: space-between;
   grid-area: header;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%2360ecf4' fill-opacity='0.05' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .site-header a,
@@ -6678,6 +6683,7 @@ blockquote {
   color: #fffaf3;
   font-family: Montserrat, Helvetica, sans-serif;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .site-header a:hover,
@@ -6685,6 +6691,7 @@ blockquote {
   background: none;
   text-decoration: none;
   color: #ebcd1c;
+  text-shadow: 0.2em 0.2em 0px rgba(0, 0, 0, 0.8);
 }
 
 /* Logo in header */
@@ -6704,7 +6711,7 @@ blockquote {
 .logo img {
   display: flex;
   flex: initial;
-  height: 20%;
+  height: 30%;
 }
 
 /* Navigation */
@@ -6774,6 +6781,7 @@ nav a:hover,
   justify-content: space-between;
   align-items: center;
   grid-area: footer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%2360ecf4' fill-opacity='0.05' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .site-footer a {
@@ -6794,6 +6802,11 @@ nav a:hover,
 
 /* Small devices */
 @media (max-width: 767px) {
+  /* Header */
+  .site-header {
+    min-height: 100px;
+  }
+
   nav {
     clear: both;
     padding: 0;
@@ -7173,7 +7186,6 @@ a:active > .report-box > .report-box-inner > p {
 
 .grid-main-kmom ul li::marker {
   color: #9e136b;
-  content: "►";
 }
 
 .sidebar {
@@ -7298,7 +7310,12 @@ a:active > .report-box > .report-box-inner > p {
 
 .gallery-list-item > picture > img {
   border-radius: 10px;
-  filter: brightness(1) contrast(1);
+  filter: grayscale(100%) brightness(1) contrast(1);
+  transition: 0.8s ease-in-out;
+}
+
+.gallery-list-item > picture > img:hover {
+  filter: grayscale(0) brightness(1) contrast(1);
 }
 
 .gallery-video-container {
@@ -7317,6 +7334,11 @@ a:active > .report-box > .report-box-inner > p {
   height: 100%;
 }
 
+@media only screen and (max-width: 900px) {
+  .gallery-list-item > picture > img {
+    filter: brightness(1) contrast(1);
+  }
+}
 @media only screen and (max-width: 700px) {
   .gallery-list {
     grid-template-columns: 1fr;
