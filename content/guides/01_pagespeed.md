@@ -33,7 +33,7 @@ API stands for Application Programming Interface. It's a very broad term that ro
 
 ### What is Google Pagespeed Insights?
 Google's [Pagespeed Insights tool](https://developers.google.com/speed/pagespeed/insights/) helps you understand how fast a webpage loads and what slows it down. There's no better way to understand the tool than to try it out yourself with a few pages, so go ahead and input a page. You'll get a bunch of results.
-![Screenshot of Google Pagespeed Insights results in browser](%assets_url%/img/website_snaps/googlepi_results.png)
+![Screenshot of Google Pagespeed Insights results in browser](%base_url%/image/website_snaps/googlepi_results.png&width=800)
 
 ### Making the case for using the API
 As you see, it's easy to manually input a single page into the browser to ask Pagespeed Insights to analyze a page and give you the results. But what if you want to look up a whole bunch of pages? And what if you want to save the results to a document, and you're not particularly fond of copy-pasting a bunch of numbers? This is where an API, specifically the Pagespeed Insights API, can really make things easier. By using an API you can fetch data not through your browser but directly in a script. This means that you can write a script that retrieves data, filters them as necessary, formats them however you want and saves them on your computer. Once you have the script set up, all you need to do is run it, and voilà! the data are on your computer.
@@ -44,7 +44,7 @@ For Google to allow you to make requests to their API as necessary, you need to 
 
 ### Running a script
 To get started making requests to the API you can use the Python script below, simply copy it into a '.py' file on your computer. The script will fetch and save pages' overall performance scores as well as the values listed under 'lab data' when using the Pagespeed Insights tool through the browser (see the image below). Values for mobile as well as desktop platform requests are fetched and stored in separate rows in the resulting CSV (comma separated values, use Excel for it if this is unfamiliar) file.
-![Screenshot of Google Pagespeed Insights lab data metrics](%assets_url%/img/website_snaps/googlepi_labdata.png)
+![Screenshot of Google Pagespeed Insights lab data metrics](%base_url%/image/website_snaps/googlepi_labdata.png&width=800)
 
 The parts that you need to change in the script are preceded by comments starting with "CHANGE THIS", the rest you can leave as is. Note that running the script might take a few minutes, because Pagespeed Insights needs some time to analyze each page.
 
@@ -134,7 +134,7 @@ page_df.to_csv(CSV_SAVE_PATH, index=False)
 ### Results
 Once you've changed the relevant bits and run the script, you should get a file with data that look something like this.
 
-![Screenshot of downloaded data CSV file opened with LibreOffice](%assets_url%/img/googlepi_downloaded_data.png)
+![Screenshot of downloaded data CSV file opened with LibreOffice](%base_url%/image/googlepi_downloaded_data.png&width=800)
 
 ## Recap
 You've learned what an Application Programming Interface (API) is and specifically how to interact with Google Pagespeed Insight's API using Python. API's are everywhere and if you do anything data- or web-related you're bound to run into them again and again, so this is essential knowledge!
