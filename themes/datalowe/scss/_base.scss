@@ -115,19 +115,23 @@ main {
     min-height: 80vh;
 }
 
-img, embed, object, video {
+img,
+embed,
+object,
+video {
     max-width: 100%;
 }
 
 // for finding img elements with missing alt attribute
 img:not([alt]) {
-    outline: 4px red dashed !important;
+    outline: 4px #f00 dashed !important;
 }
 
 @media (max-width: 500px) {
     h1 {
         font-size: $h1-font-size / 1.2;
     }
+
     h2 {
         font-size: $h1-font-size * 0.8 / 1.2;
     }

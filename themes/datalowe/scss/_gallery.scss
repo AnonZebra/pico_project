@@ -14,7 +14,7 @@
 .gallery-list-item > a > picture > img {
     border-radius: $m-border-radius;
     filter: grayscale(100%) brightness($img-brightness) contrast($img-contrast);
-    transition: .8s ease-in-out;
+    transition: 0.8s ease-in-out;
 }
 
 .gallery-list-item > a > picture > img:hover {
